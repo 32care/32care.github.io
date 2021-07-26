@@ -4,6 +4,7 @@ body {
 }
 .body-section-center{
  max-width: calc( 100% - 50px );
+ margin: auto;
 }
 .single-blog{
 	padding: 25px;
