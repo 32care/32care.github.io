@@ -1,0 +1,78 @@
+body {
+	margin: auto;
+
+}
+.body-section-center{
+ max-width: calc( 100% - 50px );
+}
+.single-blog{
+	padding: 25px;
+
+}
+.logo-adjusted {
+    position: fixed;
+    left: 0px;
+    top: 0;
+    height: 150px;
+    width: 140px;
+
+}
+.logo-adjusted>a>img {
+	    height: 100%;
+	    width: 100%;
+
+}
+.default-header{
+	box-shadow: none;
+	background-color: transparent;
+}
+
+.banner-area .fullscreen{
+	height: auto !important;
+}
+
+.logo {
+	min-height: 80px;
+}
+
+.main-menubar .main-menubar-extended a,
+.main-menubar  .lnr
+{
+	      background-color: #ffffffba;
+    padding: 8px 5px !important;
+    border-radius:50px;
+    color: #252525;
+    text-shadow: 0px 0px 0px #efefef;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ffffffba;
+    display: inline-block;
+
+    }
+
+.main-menubar .main-menubar-extended a:hover {
+	     background-color: #ffffff;
+    /* font-size: 15px; */
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 12px!important;
+    padding-right: 12px!important;
+    padding-top: 12px!important;
+    padding-bottom: 12px!important;
+    text-shadow: 0px 1px 0px #000000;
+    border: 1px solid #00000066;
+    border-radius: 50px;
+}
+.main-menubar  .lnr{
+	font-size: 25px;
+	border-radius: 2px;
+	border: none;
+    
+}
+.img-center-wrap{
+	text-align: center;
+}
