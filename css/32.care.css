@@ -77,3 +77,9 @@ body {
 .img-center-wrap{
 	text-align: center;
 }
+
+.banner-header {
+    background: -webkit-linear-gradient(270deg, #044d53 10%, #72f4ff 100%)!important;
+    -webkit-background-clip: text!important;
+    -webkit-text-fill-color: transparent!important;
+}
