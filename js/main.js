@@ -47,7 +47,7 @@ $(document).ready(function(){
         location.hostname == this.hostname
       ) {
         // Figure out element to scroll to
-        var target = $(this.hash);
+        var target = $(this.hash); //$("#appintment")
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         // Does a scroll target exist?
         if (target.length) {
@@ -55,7 +55,7 @@ $(document).ready(function(){
           event.preventDefault();
           $('html, body').animate({
             scrollTop: target.offset().top-68
-          }, 1000, function() {
+          }, 500, function() {
             // Callback after animation
             // Must change focus!
             var $target = $(target);

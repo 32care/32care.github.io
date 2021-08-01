@@ -238,6 +238,7 @@ p {
     transition: height .6s;
 }
 #appoinment.appoinment-hide {
-    height: 1px;
-
+    height: 0px;
+  overflow: hidden;
 }
+
