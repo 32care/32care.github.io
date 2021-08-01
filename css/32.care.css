@@ -232,3 +232,12 @@ p {
     right: 25px;
     display: none;
 }
+
+#appoinment {
+    
+    transition: height 20s;
+}
+#appoinment.appoinment-hide {
+    height: 0px;
+
+}

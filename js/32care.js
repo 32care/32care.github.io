@@ -14,3 +14,8 @@ $(document).ready(function(){
 			return false;
 		});
 });
+$(".Get-started").on('click', function(e){
+      e.preventDefault();
+      $("#appoinment").toggleClass('appoinment-hide');
+     
+  });
