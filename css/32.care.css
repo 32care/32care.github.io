@@ -234,10 +234,10 @@ p {
 }
 
 #appoinment {
-    
-    transition: height 20s;
+    height: 400px;
+    transition: height .6s;
 }
 #appoinment.appoinment-hide {
-    height: 0px;
+    height: 1px;
 
 }
