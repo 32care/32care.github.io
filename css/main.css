@@ -1881,7 +1881,7 @@ body {
   cursor: pointer;
 }
 
-.menu-bar span {
+.menu-bar a {
   color: #000;
   font-size: 24px;
 }
