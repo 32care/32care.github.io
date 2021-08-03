@@ -7,6 +7,7 @@ title: Blog
 		<p class="text-center">Nothing published yet!</p>
 	{% elsif site.paginate %}
 
+		<div class="row justify-content-md-center col-md-1">
 		{% if paginator.previous_page %}
 			<button class="prev col-lg-1 col-md-1" 
 				qkr-action="my_blog_teaser_prev" data-prev="{{ paginator.previous_page_path }}">
@@ -16,6 +17,7 @@ title: Blog
 		{% else %}
 			<button class="prev col-lg-1 col-md-1"></button>
 		{% endif %}
+		</div>
 
 		<div class="row justify-content-md-center">
 		{% for post in paginator.posts %}
@@ -27,6 +29,7 @@ title: Blog
 		{% endfor %}
 		</div>
 
+		<div class="row justify-content-md-center col-md-1">
 		{% if paginator.next_page %}
 			<button class="next col-lg-1 col-md-1"
 				qkr-action="my_blog_teaser_prev" data-next="{{ paginator.next_page_path }}" class="next">
@@ -36,6 +39,7 @@ title: Blog
 		{% else %}
 			<button class="next col-lg-1 col-md-1"></button>
 		{% endif %}
+		</div>
 
 	{% else %}
 		{% for post in site.posts %}
