@@ -1,6 +1,6 @@
 # main text of home
-name: Lalit Tanwar
-bio: Web Architecture | Leadership | Algorithms | Analytics | Data Science | Problem Solving
+name: 32Care
+bio: Dentist | Blogger
 
 # twitter summary info
 description: Try to be logical else I'ill ignore you.
@@ -13,9 +13,9 @@ logo: assets/images/lnt.jpeg
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
-resume: true
-resume-external: true
-resume-url: https://lnt.github.io/resume
+#resume: true
+#resume-external: true
+#resume-url: https://32care.github.io/resume
 
 url: https://32care.github.io
 # your url: http://USERNAME.github.io
@@ -61,11 +61,11 @@ quora: Lalit-Tanwar-3
 
 authors:
     elipapa:
-        name: Lalit Tanwar
-        bio: Web Solution Architect, Analysist, Naruto Fan
+        name: Amit Narayan
+        bio: BDS
         external-image: false
         picture: assets/images/lnt.jpeg
-        twitter: lalittanwar07
+        twitter: amittntantar
 
 collections:
   work:
