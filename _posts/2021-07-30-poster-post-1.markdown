@@ -8,7 +8,7 @@ tag:
 - ipsum
 - consectetur
 - veniam
-image: "img/b3.jpg"
+image: "https://www.32care.com/img/b3.jpg"
 headerImage: true
 projects: false
 category: blog

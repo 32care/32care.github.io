@@ -7,7 +7,7 @@ tag:
 - teeth
 - self-esteem
 - gum disease
-image: "img/b2.jpg"
+image: "https://www.32care.com/img/b2.jpg"
 headerImage: true
 projects: false
 category: blog
