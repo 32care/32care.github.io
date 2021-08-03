@@ -10,7 +10,11 @@
     </h4>
     {% if post.summary %}
     <p style="margin-bottom: auto;" >
-        {% if post.summary %}{{ post.summary }}{% else %}{{ post.summary }}{% endif %}
+        {% if post.summary %}
+            {% for summary in post.summary %}
+                {{ post.summary }}
+            {% endfor %}
+        {% endif %}
     </p> 
     {% endif %}
     
