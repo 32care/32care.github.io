@@ -17,7 +17,7 @@ title: Blog
 			<button class="prev col-lg-1 col-md-1"></button>
 		{% endif %}
 
-		<div class="row justify-content-md-center"></div>
+		<div class="row justify-content-md-center">
 		{% for post in paginator.posts %}
 			{% if post.category == 'blog' %}
 				{% if post.hidden != true %}
