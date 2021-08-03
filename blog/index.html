@@ -10,7 +10,7 @@ title: Blog
 		<div class="row justify-content-md-start col-md-1">
 		{% if paginator.previous_page %}
 			<button class="prev col-lg-4 col-md-4" 
-				qkr-action="my_blog_teaser_prev" data-prev="{{ paginator.previous_page_path }}">
+				qkr-action="my_blog_teaser_move" data-prev="{{ paginator.previous_page_path }}">
 				<i class="fa fa-chevron-left d-none d-md-inline"></i>
 				<i class="fa fa-chevron-down d-inline d-md-none"></i>
 			</button>
@@ -32,7 +32,7 @@ title: Blog
 		<div class="row justify-content-md-end col-md-1">
 		{% if paginator.next_page %}
 			<button class="next col-lg-4 col-md-4"
-				qkr-action="my_blog_teaser_prev" data-next="{{ paginator.next_page_path }}" class="next">
+				qkr-action="my_blog_teaser_move" data-next="{{ paginator.next_page_path }}" class="next">
 				<i class="fa fa-chevron-right d-none d-md-inline"></i>
 				<i class="fa fa-chevron-down d-inline d-md-none"></i>
 			</button>

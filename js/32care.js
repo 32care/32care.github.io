@@ -14,6 +14,12 @@ $(document).ready(function(){
 			return false;
 		});
 		quikr.init();
+		quikr.action("my_blog_teaser_move", function(data){
+			var elem = this;
+			var params = data;
+			//do something.
+			alert("Go PRef")
+		});
 });
 $(".Get-started, .confirm-booking").on('click', function(e){
       /*e.preventDefault();//*/
