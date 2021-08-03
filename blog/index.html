@@ -9,8 +9,8 @@ title: Blog
 	{% elsif site.paginate %}
 
 		{% if paginator.previous_page %}
-			<button class="prev col-lg-1 col-md-1 align-self-start" 
-				qkr-action="my_blog_teaser_prev" data-prev="{{ paginator.previous_page_path }}">Previous</button>
+			<button class="prev col-lg-1 col-md-1 fa fa-chevron-left" 
+				qkr-action="my_blog_teaser_prev" data-prev="{{ paginator.previous_page_path }}"></button>
 		{% else %}
 			<button class="prev">Previous</button>
 		{% endif %}
@@ -24,8 +24,8 @@ title: Blog
 		{% endfor %}
 
 		{% if paginator.next_page %}
-			<button class="next col-lg-1 col-md-1 align-self-end"
-				qkr-action="my_blog_teaser_prev" data-next="{{ paginator.next_page_path }}" class="next">>Next</button>
+			<button class="next col-lg-1 col-md-1 fa fa-chevron-right"
+				qkr-action="my_blog_teaser_prev" data-next="{{ paginator.next_page_path }}" class="next"></button>
 		{% else %}
 			<button class="next">Next</button>
 		{% endif %}
