@@ -7,7 +7,7 @@ tag:
 - anorexia
 - bulimia
 - binge
-image: "img/b4.jpg"
+image: "https://www.32care.com/img/b4.jpg"
 headerImage: true
 projects: false
 category: blog
