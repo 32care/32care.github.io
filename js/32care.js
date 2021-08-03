@@ -1,5 +1,5 @@
 $(document).ready(function(){
-		$(window).scroll(function () {
+	$(window).scroll(function () {
 			if ($(this).scrollTop() > 50) {
 				$('#back-to-top').fadeIn();
 			} else {
@@ -37,12 +37,9 @@ $(document).ready(function(){
 $(".Get-started, .confirm-booking").on('click', function(e){
       /*e.preventDefault();//*/
       $("#appoinment").toggleClass('appoinment-hide');
-
  });
 
-$(".Get-started").on('click', function(e){
-      
+$(".Get-started").on('click', function(e){   
       $(".Get-started").toggleClass("primary-btn2-hide");
       $("span", this).toggleClass("fa-angle-double-down fa-angle-double-up");
-      
 });
