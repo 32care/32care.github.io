@@ -2,7 +2,6 @@
 layout: compress
 title: Blog
 ---
-
 <div class="row justify-content-md-center">
 	{% if site.posts.size == 0 %}
 		<p class="text-center">Nothing published yet!</p>
@@ -15,7 +14,7 @@ title: Blog
 				<i class="fa fa-chevron-down d-inline d-md-none"></i>
 			</button>
 		{% else %}
-			<button class="prev col-lg-1 col-md-1">Previous</button>
+			<button class="prev col-lg-1 col-md-1"></button>
 		{% endif %}
 
 		<div class="row justify-content-md-center"></div>
@@ -35,7 +34,7 @@ title: Blog
 				<i class="fa fa-chevron-down d-inline d-md-none"></i>
 			</button>
 		{% else %}
-			<button class="next col-lg-1 col-md-1">Next</button>
+			<button class="next col-lg-1 col-md-1"></button>
 		{% endif %}
 
 	{% else %}
