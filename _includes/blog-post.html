@@ -1,6 +1,6 @@
 <div class="single-blog col-lg-4 col-md-4 {% if post.star %}star{% endif %}">
     <div class="img-center-wrap">
-        <img class="f-img img-fluid mx-auto" src="{{ page.image }}" alt="">
+        <img class="f-img img-fluid mx-auto" src="{{ post.image }}" alt="">
    </div>
     <h4>
         <a href="{{ site.url }}{{ post.url }}"">
@@ -8,15 +8,15 @@
             {{ post.title }}
         </a>
     </h4>
-    {% if page.summary %}
+    {% if post.summary %}
     <p style="margin-bottom: auto;" >
-        {% if page.summary %}{{ page.summary }}{% else %}{{ site.summary }}{% endif %}
+        {% if post.summary %}{{ post.summary }}{% else %}{{ post.summary }}{% endif %}
     </p> 
     {% endif %}
     
-    {% if page.bullets %}
+    {% if post.bullets %}
     <ul class="a" >
-        {% for bullet in page.bullets %}
+        {% for bullet in post.bullets %}
         <li> <a href="{{ site.url }}{{ post.url }}#{{ bullet | slugify }}">{{ bullet }}</a></li>
         {% endfor %}
     </ul>
