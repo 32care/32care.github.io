@@ -3,13 +3,13 @@ layout: compress
 title: Blog
 ---
 
-<div class="row">
+<div class="row justify-content-md-center">
 	{% if site.posts.size == 0 %}
 		<p class="text-center">Nothing published yet!</p>
 	{% elsif site.paginate %}
 
 		{% if paginator.previous_page %}
-			<button class="prev" 
+			<button class="prev col-lg-1 col-md-1 align-self-start" 
 				qkr-action="my_blog_teaser_prev" data-prev="{{ paginator.previous_page_path }}">Previous</button>
 		{% else %}
 			<button class="prev">Previous</button>
@@ -24,7 +24,7 @@ title: Blog
 		{% endfor %}
 
 		{% if paginator.next_page %}
-			<button class="next"
+			<button class="next col-lg-1 col-md-1 align-self-end"
 				qkr-action="my_blog_teaser_prev" data-next="{{ paginator.next_page_path }}" class="next">>Next</button>
 		{% else %}
 			<button class="next">Next</button>
