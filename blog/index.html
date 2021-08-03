@@ -4,16 +4,17 @@ title: Blog
 ---
 
 <div class="row">
-	{% if paginator.previous_page %}
-		<button class="prev" 
-			qkr-action="my_blog_teaser_prev" data-prev="{{ paginator.previous_page_path }}">Previous</button>
-	{% else %}
-		<button class="prev">Previous</button>
-	{% endif %}
-
 	{% if site.posts.size == 0 %}
 		<p class="text-center">Nothing published yet!</p>
 	{% elsif site.paginate %}
+
+		{% if paginator.previous_page %}
+			<button class="prev" 
+				qkr-action="my_blog_teaser_prev" data-prev="{{ paginator.previous_page_path }}">Previous</button>
+		{% else %}
+			<button class="prev">Previous</button>
+		{% endif %}
+
 		{% for post in paginator.posts %}
 			{% if post.category == 'blog' %}
 				{% if post.hidden != true %}
@@ -22,7 +23,13 @@ title: Blog
 			{% endif %}
 		{% endfor %}
 
-		{% include pagination.html%}
+		{% if paginator.next_page %}
+			<button class="next"
+				qkr-action="my_blog_teaser_prev" data-next="{{ paginator.next_page_path }}" class="next">>Next</button>
+		{% else %}
+			<button class="next">Next</button>
+		{% endif %}
+
 	{% else %}
 		{% for post in site.posts %}
 			{% if post.category == 'blog' %}
@@ -32,13 +39,5 @@ title: Blog
 			{% endif %}
 		{% endfor %}
 	{% endif %}
-
-	{% if paginator.next_page %}
-		<button class="next"
-			qkr-action="my_blog_teaser_prev" data-next="{{ paginator.next_page_path }}" class="next">>Next</button>
-  	{% else %}
-    	<button class="next">Next</button>
-  	{% endif %}
-
 
 </div>
