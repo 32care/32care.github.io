@@ -17,8 +17,14 @@ $(document).ready(function(){
 		quikr.action("my_blog_teaser_move", function(data){
 			var elem = this;
 			var params = data;
+			quikr.applyTmpl(
+				$("#my_blog_teaser").attr("url-html",
+					'https://www.32care.com/' + (elem.dataset.next || elem.dataset.prev)
+				)[0]
+			)
+
 			//do something.
-			alert("Go PRef")
+			console.log("Go PRef",this,	 elem.dataset.next, elem.dataset.prev)
 		});
 });
 $(".Get-started, .confirm-booking").on('click', function(e){
