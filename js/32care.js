@@ -13,6 +13,7 @@ $(document).ready(function(){
 			}, 1000);
 			return false;
 		});
+		quikr.init();
 });
 $(".Get-started, .confirm-booking").on('click', function(e){
       /*e.preventDefault();//*/
@@ -20,4 +21,3 @@ $(".Get-started, .confirm-booking").on('click', function(e){
 
      
   });
-
