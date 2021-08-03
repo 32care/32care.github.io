@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "How to bind @RequestParam to POJO in Spring 2"
+title: "Healthy Smile is  more important than WHite Smile."
 date: 2021-07-30 22:33
 comments: true
 tag: 
-- springboot
-- java
-- swagger
-- springfox
+- teeth
+- self-esteem
+- gum disease
 image: "img/b2.jpg"
 headerImage: true
 projects: false
@@ -15,19 +14,16 @@ category: blog
 author: lt
 externalLink: http://dolszewski.com/spring/how-to-bind-requestparam-to-object/
 summary: 
-- Eating disorders such as anorexia, bulimia and binge eating disorder all have negative effects on the mouth.<br>
-- Potential negative effects of vitamin and nutrient deficiencies  will also be reflected in the mouth & their Symptoms can range from slight to severe.<br>
-- Dental professionals are often the among the first to identify the early warning signs of eating disorders.<br>
-- "Oral signs of eating disorders include:"
+- "White teeth can improve just our self-esteem, but suffering from tooth loss can have the opposite effect. The health of our mouth isn’t only important for the state of smile, but also our quality of life. There are evidence of gum disease linking to conditions such as heart disease, strokes, diabetes and dementia. Healthy teeth and gums can be achieved by a good oral health routine"
+- "A good oral health routine only involves:"
 bullets: 
-- Sensitive Teeth
-- Tooth Decay
-- Dry Mouth
-- Mouth Sores
-- Enamel Eosion
-- Cracked/dry Lips
-- Enlarged Salivary Glands
-- Bruising & Injury to the mouth
+- Brushing our teeth properly twice a day
+- Cleaning our tongue
+- Drinking more water daily
+- Eating crunchy fruits and vegetables
+- Limit sugary and acidic foods
+- A quick rinse with water after every meal.
+- Visiting dentist atleast twice year.
 ---
 
 This is My Full Post

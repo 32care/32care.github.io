@@ -1,19 +1,17 @@
 ---
 layout: post
-title: "How to bind @RequestParam to POJO in Spring 3"
+title: "Eating disorders can affect your mouth"
 date: 2021-07-30 22:33
 comments: true
 tag: 
-- springboot
-- java
-- swagger
-- springfox
-image: "img/b3.jpg"
+- anorexia
+- bulimia
+- binge
+image: "img/b1.jpg"
 headerImage: true
 projects: false
 category: blog
 author: lt
-externalLink: http://dolszewski.com/spring/how-to-bind-requestparam-to-object/
 summary: 
 - Eating disorders such as anorexia, bulimia and binge eating disorder all have negative effects on the mouth.<br>
 - Potential negative effects of vitamin and nutrient deficiencies  will also be reflected in the mouth & their Symptoms can range from slight to severe.<br>
