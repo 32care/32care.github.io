@@ -2072,13 +2072,14 @@ nav a:hover {
 .primary-btn2 span {
   color: #fff;
   position: absolute;
-  top: 50%;
+  top: 55%;
   transform: translateY(-60%);
-  right: 30px;
+  right: 25px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  transition: all 0.1s ease 0s;
+  font-size: 20px;
 }
 
 .primary-btn2:after {
@@ -2103,7 +2104,9 @@ nav a:hover {
 
 .primary-btn2:hover span {
   color: #fff;
-  right: 20px;
+  top: 65%;
+  font-size: 21px;
+  
 }
 
 .no-icon {
@@ -2134,7 +2137,7 @@ nav a:hover {
 }
 
 .banner-area .fullscreen {
-  height: 850px !important;
+  height: 340px !important;
 }
 
 @media (max-width: 768px) {
@@ -2572,11 +2575,7 @@ p {
   transition: all 0.3s ease 0s;
 }
 
-@media (max-width: 1199px) {
-  .footer-social {
-    margin-top: 30px;
-  }
-}
+
 
 @media (max-width: 991px) {
   .footer-social {
