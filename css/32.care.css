@@ -11,8 +11,7 @@ ul.a {
   padding: 15px;
 }
 .single-blog{
-	padding: 25px;
-
+    padding: 10px!important;
 }
 .logo-adjusted {
     position: fixed;

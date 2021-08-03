@@ -1,0 +1,39 @@
+<div class="single-blog col-lg-4 col-md-4 {% if post.star %}star{% endif %}">
+    <div class="img-center-wrap">
+        <img class="f-img img-fluid mx-auto" src="{{ post.image }}" alt="">
+   </div>
+    <h4>
+        <a href="{{ site.url }}{{ post.url }}"">
+            <aside class="date" style="display: none;"><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
+            {{ post.title }}
+        </a>
+    </h4>
+    {% if post.summary %}
+    <p style="margin-bottom: auto;" >
+        {% if post.summary %}
+            {% for summary in post.summary %}
+                {{ summary }}
+            {% endfor %}
+        {% endif %}
+    </p> 
+    {% endif %}
+    
+    {% if post.bullets %}
+    <ul class="a" >
+        {% for bullet in post.bullets %}
+        <li> <a href="{{ site.url }}{{ post.url }}#{{ bullet | slugify }}">{{ bullet }}</a></li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    <!-- <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
+        <div>
+            <img class="img-fluid" src="img/user.png" alt="">
+            <a href="#"><span>Mark Wiens</span></a>
+        </div>
+        <div class="meta">
+            13th Dec
+            <span class="lnr lnr-heart"></span> 15
+            <span class="lnr lnr-bubble"></span> 04
+        </div>
+    </div> -->
+</div>

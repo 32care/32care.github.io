@@ -1,0 +1,37 @@
+---
+layout: page
+title: Blog
+---
+<div id="my_blog_teaser" qkr-tmpl url-html="https://www.32care.com/blog/min/">
+    <%= html %>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/quikrs/quikr.js@master/quikr.js"></script>
+<script>
+    $(document).ready(function(){
+    	quikr.init();
+		quikr.action("my_blog_teaser_move", function(data){
+			var elem = this;
+			var params = data;
+			quikr.applyTmpl(
+				$("#my_blog_teaser").attr("url-html",
+					'https://www.32care.com/' + (elem.dataset.next || elem.dataset.prev)
+				)[0]
+			);
+			console.log("Go PRef",this,	 elem.dataset.next, elem.dataset.prev);
+		});
+    });
+
+</script>
+<style>
+    .next, .prev {
+        width: 100%;
+    }
+    button.next:before {
+        content: "Next";
+    }
+    button.prev:before {
+        content: "Previous";
+    }
+</style>
