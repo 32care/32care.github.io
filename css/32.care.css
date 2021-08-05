@@ -39,7 +39,11 @@ ul.a {
     }
 }
 
-
+@media (max-width: 767px){
+.single-footer-widget  h6 ,ul {
+    text-align:right;
+       }
+}
 .default-header{
 	box-shadow: none;
 	background-color: transparent;
@@ -108,6 +112,11 @@ ul.a {
 
 .img-center-wrap{
 	text-align: center;
+}
+.img-right {
+     max-width: 100%;
+        max-height: 100%;
+        display: block; /* remove extra space below image */lute;*/
 }
 
 
@@ -184,9 +193,13 @@ padding: 22px 6px 0px 15px;
 .footer-social i {
     color: #40686b;
     font-size:35px;
+     margin-block: 10px;
 }
+
+
+
 p {
-    color: #636363;
+    color: #636363
 
 }
 .footer-social a:active i  {
@@ -249,7 +262,7 @@ p {
 
 #appoinment {
     height: 400px;
-    transition: height .6s;
+    transition: height .2s;
 }
 #appoinment.appoinment-hide {
     height: 0px;
@@ -264,7 +277,7 @@ p {
       padding-left: 0%;
 }
 .about-right form {
-         background-image: -webkit-linear-gradient( 270deg, #ababab 0%, #dadada 5%, #dadada 95%, #ababab 100%);
+         background-image: -webkit-linear-gradient( 270deg, #dadada 0%, #f7f7f7 9%, #f1f1f1 90%, #cac8c8 100%);
 
 }  
 .primary-btn2 {
@@ -272,60 +285,111 @@ p {
   padding-left: 30px;
   padding-right: 60px;
   border-radius: 25px 25px 25px 5px;
-  background-image: -webkit-linear-gradient(90deg,  #b2b2b2 10%, #000000 100%);
+  background-image: -webkit-linear-gradient(90deg,  #d6d6d6 30%, #000000 100%);
   border: none;
   color: #fff;
   display: inline-block;
   font-weight: 500;
   position: relative;
-  -webkit-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.1s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  transition: all 0.1s ease 0s;
   cursor: pointer;
+  margin-left: -15px;
 }
 .primary-btn3 {
   line-height: 42px;
   padding-left: 30px;
   padding-right: 60px;
-  border-radius: 25px 25px 25px 5px;
-  background-image: -webkit-linear-gradient(90deg,  #b2b2b2 10%, #000000 100%);
+  border-radius: 25px 5px 25px 5px;
+  background-image: -webkit-linear-gradient(90deg, #1d747b 0%, #67e4ee 100%);
   border: none;
   color: #fff;
   display: inline-block;
   font-weight: 500;
   position: relative;
-  -webkit-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.1s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  transition: all 0.1s ease 0s;
   cursor: pointer;
+ margin-right: -15px; 
+    
 }
-/*.primary-btn2:hover {
-    border-radius: 25px 20px 5px 5px;
-}*/
+.primary-btn3:hover span {
+    color: #fff;
+    right: 20px;
+}
+
+.primary-btn3:hover {
+    color: #fff;
+}
+.primary-btn3 span {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    right: 30px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.primary-btn2-hide:hover {
+    color: black;
+}
 .primary-btn2-hide {
-    border-radius: 25px 25px 5px 5px;
+    border-radius: 25px 25px 0px 0px;
+    margin-left: -15px;
+    background-image: -webkit-linear-gradient(90deg,  #dadada 50%, #000000 120%);
+    color: black;
 
 }
 .primary-btn2-hide span {
-          color: #fff;
+          color: black;
           position: absolute;
           top: 57%;
           transform: translateY(-60%);
           right: 25px;
-          -webkit-transition: all 0.3s ease 0s;
-          -moz-transition: all 0.3s ease 0s;
-          -o-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.1s ease 0s;
+          -moz-transition: all 0.1s ease 0s;
+          -o-transition: all 0.1s ease 0s;
           transition: all 0.1s ease 0s;
           font-size: 20px;
 }
 
 .primary-btn2-hide:hover span {
-    
+    color: black;
      top: 50%;
   font-size: 21px;
 
-}
 
+}
+.primary-btn4 {
+                line-height: 42px;
+              padding-left: 30px;
+              padding-right: 30px;
+              border-radius: 5px 25px 5px 25px;
+              background: transparent;
+              border: none;
+              color: black;
+              display: inline-block;
+              font-weight: 500;
+              position: relative;
+              -webkit-transition: all 0.1s ease 0s;
+              -moz-transition: all 0.3s ease 0s;
+              -o-transition: all 0.3s ease 0s;
+              transition: all 0.1s ease 0s;
+              cursor: pointer;
+             margin-left:-15px; 
+             font-size: 25px;
+
+}
+.primary-btn4:hover {
+    color: black;
+    bottom: 5px;
+
+}
 

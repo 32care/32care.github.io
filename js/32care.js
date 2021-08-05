@@ -34,12 +34,20 @@ $(document).ready(function(){
 			console.log("Go PRef",this,	 elem.dataset.next, elem.dataset.prev)
 		});
 });
-$(".Get-started, .confirm-booking").on('click', function(e){
+
+$(".Get-started, .confirm-booking, .close-booking ").on('click', function(e){
       /*e.preventDefault();//*/
       $("#appoinment").toggleClass('appoinment-hide');
  });
 
-$(".Get-started").on('click', function(e){   
+$(".Get-started ").on('click', function(e){   
       $(".Get-started").toggleClass("primary-btn2-hide");
-      $("span", this).toggleClass("fa-angle-double-down fa-angle-double-up");
+      $(".Get-started span").toggleClass("fa-angle-double-down ");
 });
+
+$('.close-booking').on('click', function(e) {
+			$(".Get-started span").addClass("fa-angle-double-down")
+			$(".Get-started").toggleClass("primary-btn2-hide")
+
+});
+
