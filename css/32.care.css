@@ -128,6 +128,12 @@ ul.a {
  .p1-gradient-bg, .primary-btn, .primary-btn:after, .primary-btn2:after, .single-con .content .content-overlay,  .single-footer-widget .bb-btn {
     
     background-image: -webkit-linear-gradient(0deg, #044d53 0%, #67e4ee 100%);
+
+}
+@media (min-width: 992px)
+.col-lg-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
 }
 .p1-gradient-color, .banner-content h1, .single-fact h2, .single-footer-widget h3 {
     background: -moz-linear-gradient(0deg, #2380ff 0%, #52fdd9 100%);
