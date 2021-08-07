@@ -1019,10 +1019,10 @@ pre code {
     flex: 0 0 58.33333%;
     max-width: 58.33333%;
   }
-  /*.col-lg-8 {
+  .col-lg-8 {
     flex: 0 0 66.66667%;
     max-width: 66.66667%;
-  }*/
+  }
   .col-lg-9 {
     flex: 0 0 75%;
     max-width: 75%;
@@ -1986,9 +1986,9 @@ fieldset[disabled] a.btn {
 }
 
 .btn-light {
-  color: #111;
+ /* color: #111;
   background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  border-color: #f8f9fa;*/
 }
 
 .btn-light:hover {
@@ -2307,9 +2307,9 @@ fieldset[disabled] a.btn {
 }
 
 .btn-lg, .btn-group-lg > .btn {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   font-size: 1.25rem;
-  line-height: 1.5;
+  line-height: 1;
   border-radius: 0.3rem;
 }
 
