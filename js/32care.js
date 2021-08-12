@@ -39,12 +39,13 @@ $(document).ready(function(){
 $(".Get-started, .confirm-booking, .close-booking ").on('click', function(e){
       /*e.preventDefault();//*/
       $("#appoinment").toggleClass('appoinment-hide');
+      $("#overlay").toggleClass('overlay');
  });
 
 $(".Get-started ").on('click', function(e){   
       $(".Get-started").toggleClass("primary-btn2-hide");
       $(".Get-started span").toggleClass("fa-angle-double-down ");
-       $("body").toggleClass("overlay")
+       /*$("body").toggleClass("overlay")*/
 });
 
 $('.close-booking').on('click', function(e) {

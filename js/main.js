@@ -22,11 +22,12 @@ $(document).ready(function(){
      
    // -------   Active Mobile Menu-----//
 
-  $(".menu-bar").on('click', function(e){
-      e.preventDefault();
+  $(".menu-bar :checkbox ").on('click', function(e){
+      /*e.preventDefault();*/
       $("nav").toggleClass('hide');
-      $("span", this).toggleClass("lnr-menu lnr-cross");
-      $(".main-menu").addClass('mobile-menu');
+      /*$("span", this).toggleClass("lnr-menu lnr-cross");*/
+     /* $(".main-menu").addClass('mobile-menu');*/
+
   });
 
 
