@@ -452,7 +452,8 @@ p {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.1s ease 0s;
   cursor: pointer;
-  margin-left: -15px;
+  margin-top: 72px;ar
+  /*margin-left: -15px*/;
 }
 .primary-btn3 {
   line-height: 42px;
@@ -498,7 +499,7 @@ p {
 }
 .primary-btn2-hide {
     border-radius: 200px 200px 0px 0px;;
-    margin-left: -15px;
+    /*margin-left: -15px;*/
     background-image: -webkit-linear-gradient(90deg,  #dadada 50%, #000000 120%);
     color: black;
 
