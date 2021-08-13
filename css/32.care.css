@@ -210,8 +210,34 @@ ul.a {
     background-image: -webkit-linear-gradient(0deg, #044d53 0%, #67e4ee 100%);
 
 }
+.primary-btn:active {
+    background-image: -webkit-linear-gradient(0deg, #044d53 0%, #044d53 100%);
 
+}
 
+.nw-btn.primary-btn:active span {
+    color: #fff;
+    right: -20px;
+}
+
+.sbm-btn {
+        line-height: 42px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    position: relative;
+    background-image: -webkit-linear-gradient(0deg, #044d53 0%, #044d53 100%);
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+        
+}
   
 
 
@@ -352,32 +378,36 @@ p {
     right: 25px;
     display: none;
     border-radius: 25px;
-    color: #51c2cb!important;
+    /*color: #51c2cb!important;*/
 
 }
  .back-to-top:hover {
-       background-color: #ffffff66;
-    box-shadow: inset 0px 1px 10px 6px #e1e0e0;
+    background-color: #ffffffbf;
+    box-shadow: inset 0px 1px 10px 6px #f2f1f1;
     border-color: #adadad;
 
 
 }
 .back-to-top i {
-    color: #2d8b93;
-     
+    color: #2d8b93;    
 }
+
+.back-to-top:active i {
+    color: white;
+}
+
  .mirror{
         position: absolute;
     padding: 2px 13px;
     margin-top: -12px;
     left: 36px;
-    background: white;
+    background: #9e9e9e;
     display: none;
 }
 
      
 
- .back-to-top:hover +.mirror{
+ .back-to-top:hover .mirror{
      display: block;   
    
     
@@ -395,16 +425,16 @@ p {
  }
  */
 
- .back-to-top:focus {
+/* .back-to-top:focus {
         box-shadow: inset 0 1px 10px 6px rgb(255 255 255 / 38%);
         border:none ;
-        color: #a7aeaf!important;
+        color: #a7aeaf!important;*/
  }
 
-  .back-to-top:active {
+  /*.back-to-top:active {
         box-shadow: inset 0 1px 10px 6px #cececede;
         color: #a7aeaf!important;
- }
+ }*/
 
 
    .back-to-bottom {
@@ -415,7 +445,7 @@ p {
 }
 
 #appoinment {
-    height: 400px;
+   /* height: 400px;*/
     transition: height .2s;
 }
 #appoinment.appoinment-hide {
