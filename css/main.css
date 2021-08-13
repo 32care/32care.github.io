@@ -2010,18 +2010,39 @@ nav a:hover {
 
 
 }
+.primary-btn  {
+  line-height: 42px!important;
+  padding-left: 20px!important;
+  padding-right: 20px!important;
+  border-radius: 25px!important;
+  border: none!important;
+  color: #fff!important;
+  display: inline-block!important;
+  font-weight: 500!important;
+  position: relative;
+      background-image: -webkit-linear-gradient(0deg, #044d53 0%, #67e4ee 100%)!important;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+      width: 120px!important;
+
+
+
+}
 .img-right img
 
-.primary-btn:focus {
+/*.primary-btn:focus {
   outline: none;
-}
+}*/
 
 .primary-btn span {
   color: #fff;
   position: absolute;
   top: 50%;
   transform: translateY(-60%);
-  right: 30px;
+  right: 15px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -2046,11 +2067,12 @@ nav a:hover {
 
 .primary-btn:hover {
   color: #fff;
+  background-image: -webkit-linear-gradient(0deg, #044d53 30%, #67e4ee 100%)!important;
 }
 
 .primary-btn:hover span {
   color: #fff;
-  right: 20px;
+  right: 10px;
 }
 
 .primary-btn2 {

@@ -54,12 +54,12 @@ $('.close-booking').on('click', function(e) {
 
 });
 
-/*$('.primary-btn').on('click', function(e) {
+$('.primary-btn').on('click', function(e) {
 			$(".primary-btn span").removeClass("fa fa-caret-right fadeOut")
 			$(".primary-btn").removeClass("primary-btn")
 			
 
-});*/
+});
 
 function myFunction() {
   document.getElementById("mySubmit").value = "Submitted";

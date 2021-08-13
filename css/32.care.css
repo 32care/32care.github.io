@@ -90,6 +90,17 @@ ul.a {
     
    }
 }
+ @media (max-width: 575px){
+
+ .primary-btn , .sbm-btn {
+
+    margin-top: 10px;
+ }
+}
+
+
+
+
 .default-header{
 	box-shadow: none;
 	background-color: transparent;
@@ -236,6 +247,7 @@ ul.a {
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     cursor: pointer;
+    width: 120px;
         
 }
   
@@ -382,8 +394,8 @@ p {
 
 }
  .back-to-top:hover {
-    background-color: #ffffffbf;
-    box-shadow: inset 0px 1px 10px 6px #f2f1f1;
+    background-color: #ffffff66;
+    box-shadow: inset 0px 1px 10px 6px #e1e0e0;
     border-color: #adadad;
 
 
@@ -392,10 +404,12 @@ p {
     color: #2d8b93;    
 }
 
-.back-to-top:active i {
-    color: white;
+.back-to-top i:active {
+    color: #ffffff00!important;
 }
-
+.back-to-top i:focus {
+    color: #ffffff00!important;
+}
  .mirror{
         position: absolute;
     padding: 2px 13px;
