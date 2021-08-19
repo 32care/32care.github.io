@@ -2642,6 +2642,7 @@ p {
   color: #777;
   padding-left: 15px;
   width: 100%;
+      outline: none;
 }
 
 .single-footer-widget .bb-btn {
