@@ -44,20 +44,20 @@ $(".Get-started, .confirm-booking, .close-booking ").on('click', function(e){
  });
 
 $(".Get-started ").on('click', function(e){   
-      $(".Get-started").toggleClass("primary-btn2-hide");
-      $(".Get-started span").removeClass("fa-angle-double-down ");
+      $(".Get-started").toggleClass("primary-btn2-hide  primary-btn2");
+      $(".Get-started span").toggleClass("fa-caret-down fa-tooth");
        /*$("body").toggleClass("overlay")*/
 });
 
 
 $(".confirm-booking").on('click', function(e){   
-      $(".Get-started").toggleClass("primary-btn2-hide");
-       $(".Get-started span").addClass("fa-angle-double-down ");     
+      $(".Get-started").toggleClass("primary-btn2-hide  primary-btn2");
+       $(".Get-started span").toggleClass("fa-caret-down fa-tooth");    
 });
 
 $('.close-booking').on('click', function(e) {
-			$(".Get-started span").addClass("fa-angle-double-down")
-			$(".Get-started").toggleClass("primary-btn2-hide")
+			$(".Get-started span").toggleClass("fa-caret-down  fa-tooth");
+			$(".Get-started").toggleClass("primary-btn2-hide primary-btn2");
 
 });
 

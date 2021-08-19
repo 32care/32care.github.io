@@ -2098,7 +2098,7 @@ nav a:hover {
 }
 
 .primary-btn2 span {
-  color: #fff;
+  color: #09555C;
   position: absolute;
   top: 55%;
   transform: translateY(-60%);
@@ -2126,17 +2126,23 @@ nav a:hover {
   z-index: 1;
 }
 
-.primary-btn2:hover {
+/*.primary-btn2:hover {
   color: #fff;
-}
+}*/
 
 .primary-btn2:hover span {
-  color: #fff;
-  top: 65%;
+  /*color: #fff;*/
+  top: 70%;
   font-size: 21px;
   
 }
-
+/*.primary-btn2:focus span {
+  color: #fff;
+  top: 75%;
+  font-size: 21px;
+  
+}
+*/
 .no-icon {
   padding-right: 30px;
 }
@@ -2218,8 +2224,9 @@ nav a:hover {
     font-weight: 700;
     max-width: 730px;
     font-family: inherit;
-        color: #ffffff;
-        text-shadow: 0px 0px 5px #ffffff, 0 0 20px #9a959500, 0 0 20px #f4f4f4;
+        color: #044d53a3;
+    text-shadow: 0px 0px 6px #ffffff, 0 0 20px #ffffff, 0 0 20px #f4f4f4;
+
 }
     /*text-decoration-line: overline;
     text-decoration-color: #368c93;*/
@@ -2303,20 +2310,22 @@ nav a:hover {
 
 .about-right .form-control {
   border-radius: 0;
-  background-color: transparent;
-  border: 1px solid #656463;
-  color: #fff;
+  background-color: white;
+  border: transparent;
+  color: black;
   font-size: 14px;
   padding: 12px;
+  border-radius: 10px;
 }
 
 .about-right input, .about-right textarea {
   font-size: 14px;
-  font-weight: 200;
-  background-color: transparent;
-  border: 1px solid #656463;
+  font-weight: 350;
+  background-color: white;
+  border: transparent;
   padding: 12px;
-  color: #fff;
+  color: black;
+  border-radius: 10px;
 }
 
 .about-right .option {
