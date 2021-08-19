@@ -2326,6 +2326,7 @@ nav a:hover {
   padding: 12px;
   color: black;
   border-radius: 10px;
+      outline: none;
 }
 
 .about-right .option {
@@ -2550,7 +2551,7 @@ nav a:hover {
 
 .single-blog .f-img:hover {
   cursor: pointer;
-  opacity: .5;
+  /*opacity: .5;*/
   transform: scale(1.05);
 }
 
