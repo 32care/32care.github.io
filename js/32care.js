@@ -51,7 +51,7 @@ $(".appoinment2   ").on('click', function(e){
        $("#booking-btn ").removeClass("  hide-it");
        $("#confmed-btn").addClass(" hide-it");
        $("#booking-btn ").addClass(" zi-up");
-       $(" #new-book").toggleClass(" hide-it ");
+       $(" #new-book").addClass(" hide-it ");
 
 
  });
