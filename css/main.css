@@ -86,6 +86,7 @@ iframe {
 a, a:focus, a:hover {
   text-decoration: none;
   outline: 0;
+  
 }
 
 .btn.active.focus,
@@ -1892,11 +1893,11 @@ body {
 
 nav {
   margin-right: 70px;
-  -webkit-transition: all 0.3s ease 0s;
+ /* -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  transform-origin: 100% 50%;
+  transform-origin: 100% 50%;*/
 }
 
 @media (max-width: 767px) {
@@ -1906,13 +1907,13 @@ nav {
     right: 0;
     top: 47px;
     text-align: right;
-    padding: 20px 0;
+    /*padding: 20px 0;*/
     z-index: 5;
     /*background: #fff;*/
   }
-  nav a {
+ /* nav a {
     color: #2482ff !important;
-  }
+  }*/
   nav a:hover {
     color: #2482ff;
   }
@@ -1922,25 +1923,25 @@ nav.hide {
   transform: scale(0);
 }
 
-nav a {
+/*nav a {
   color: #000;
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
   margin: 0 25px;
   display: inline-block;
-}
+}*/
 
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
   nav a {
     margin: 5px 25px;
   }
-}
+}*/
 
-nav a:hover {
+/*nav a:hover {
   color: #2482ff;
 }
-
+*/
 .section-gap {
   padding: 120px 0;
 }
@@ -2197,6 +2198,7 @@ nav a:hover {
 @media (max-width: 991px) {
   .banner-content h1 {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
@@ -2574,7 +2576,7 @@ nav a:hover {
 
 h6 {
   color: #fff;
-  margin-bottom: 25px;
+  
   font-size: 18px;
   font-weight: 600;
 }

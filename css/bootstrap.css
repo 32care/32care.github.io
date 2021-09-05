@@ -187,7 +187,7 @@ sup {
 }
 
 a {
-  color: #007bff;
+  /*color: #007bff;*/
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -233,6 +233,7 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
+  margin-bottom: 20px;
 }
 
 svg:not(:root) {
@@ -457,6 +458,9 @@ hr {
   margin-bottom: 1rem;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+      width: 100px;
+    margin-left: 0;
+}
 }
 
 small,
@@ -5170,6 +5174,7 @@ a.bg-dark:focus, a.bg-dark:hover {
   }
   .d-md-block {
     display: block !important;
+    margin-bottom: 20px;
   }
   .d-md-table {
     display: table !important;

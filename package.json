@@ -1,0 +1,24 @@
+{
+  "name": "32care.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fileUpload.js",
+  "dependencies": {
+    "http-server": "^13.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve" : "http-server . -p 9000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/32care/32care.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/32care/32care.github.io/issues"
+  },
+  "homepage": "https://github.com/32care/32care.github.io#readme"
+}

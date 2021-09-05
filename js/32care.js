@@ -36,32 +36,98 @@ $(document).ready(function(){
 		});
 });
 
-$(".Get-started, .confirm-booking, .close-booking ").on('click', function(e){
+$(".Get-started, .confirm-booking, .close-booking   ").on('click', function(e){
       /*e.preventDefault();//*/
       $("#appoinment").toggleClass('appoinment-hide');
       $("#overlay").toggleClass('overlay');
 
  });
 
+$(".appoinment2   ").on('click', function(e){
+      /*e.preventDefault();//*/
+      $("#appoinment").toggleClass('appoinment-hide');
+      /*$("#booking-btn").toggleClass("primary-btn2-hide   primary-btn2");*/
+      $("#overlay").toggleClass('overlay');
+       $("#booking-btn ").removeClass("  hide-it");
+       $("#confmed-btn").addClass(" hide-it");
+       $("#booking-btn ").addClass(" zi-up");
+       $(" #new-book").toggleClass(" hide-it ");
+
+
+ });
+
+
+$(".Get-started2 , .close-consult, .consult-now  ").on('click', function(e){
+      /*e.preventDefault();//*/
+      $("#consult").toggleClass('consult-hide');
+      $("#overlay").toggleClass('overlay');
+
+ });
+
+
+
 $(".Get-started ").on('click', function(e){   
-      $(".Get-started").toggleClass("primary-btn2-hide  primary-btn2");
-      $(".Get-started span").toggleClass("fa-caret-down fa-tooth");
+        $("#booking-btn").toggleClass("   zi-up ");
+        $(".Get-started span").toggleClass("fa-caret-down       fa-tooth");
+
        /*$("body").toggleClass("overlay")*/
 });
 
+$("#new-book").on('click', function(e){ 
+      $("#appoinment").toggleClass('appoinment-hide');
+      $("#overlay").toggleClass('overlay');  
+        $("#booking-btn").toggleClass(" hide-it zi-up");
+        $("#confmed-btn , #new-book").toggleClass(" hide-it ");
+        $(".Get-started span").toggleClass("fa-caret-down  fa-tooth");
+
+       /*$("body").toggleClass("overlay")*/
+});
+
+$(".Get-started2 ").on('click', function(e){   
+        $("#consult-btn").toggleClass("   zi-up ");
+        $(".Get-started span").toggleClass("fa-caret-down       fa-tooth");
+         
+       
+});
+
+
 
 $(".confirm-booking").on('click', function(e){   
-      $(".Get-started").toggleClass("primary-btn2-hide  primary-btn2");
-       $(".Get-started span").toggleClass("fa-caret-down fa-tooth");    
+         
+         $(".Get-started span").toggleClass("fa-caret-down    fa-tooth");
+          $("#booking-btn ").toggleClass(" hide-it zi-up ");
+          $("#confmed-btn , #new-book").toggleClass(" hide-it ");
+          
+         
+        
+
+});
+$(".consult-now").on('click', function(e){   
+         $(".Get-started2").toggleClass("zi-up    ");
+         $(".Get-started2 span").toggleClass("fa-caret-down    fa-tooth");
+        
+        
+
 });
 
-$('.close-booking').on('click', function(e) {
-			$(".Get-started span").toggleClass("fa-caret-down  fa-tooth");
-			$(".Get-started").toggleClass("primary-btn2-hide primary-btn2");
+
+
+$('.close-booking').on('click',   function(e){
+			$(".Get-started span").toggleClass("fa-caret-down    fa-tooth");
+			$("#booking-btn").toggleClass("zi-up");
+
+			/*$("#confmed-btn").addClass(" confmed-btn");*/
+
+});
+$('.close-consult').on('click',   function(e){
+			$(".Get-started2 span").toggleClass("fa-caret-down    fa-tooth");
+			$("#consult-btn").toggleClass("zi-up");
+
+			/*$("#confmed-btn").addClass(" confmed-btn");*/
 
 });
 
-$('.primary-btn').on('click', function(e) {
+$('.primary-btn').on('click',   function(e){
 			$(".primary-btn span").removeClass("fa fa-caret-right fadeOut")
 			$(".primary-btn").removeClass("primary-btn")
 			$(".sbm-btn").addClass("sbm-btn")
@@ -72,8 +138,24 @@ $('.primary-btn').on('click', function(e) {
 function myFunction() {
   document.getElementById("mySubmit").value = "Submitted";
 }*/
+/*
+  $(document).ready(function() {
+         
+         $(".hide-menubar").click(function(){
+         $(":checkbox").prop("checked", false);
+         
+         });*/
+
+$('.hide-menubar').on('click',   function(e){
+			$("#nav-icon1").toggleClass("open");
+			
+
+});
 
 
-
-
+$(document).ready(function(){
+	$('.menu-bar').click(function(){
+		$(this).toggleClass('open');
+	});
+});
 

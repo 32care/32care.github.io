@@ -33,37 +33,49 @@
 		</head>
 		<body>
 
+
+
 			<!-- Start Header Area -->
 			<header class="default-header" style=" padding-top:5px; padding-bottom:5px; ">
 				<div class="container" >
 					<div class="header-wrap">
-						<div class="header-top d-flex justify-content-between align-items-center">
+						<div class="header-top d-flex justify-content-center ">
 							<div class="logo">
-								<div class="logo-adjusted"><a href="#home"><img src="img/32Carelogo.png" alt=""></a>
+								<div class="logo-adjusted"><a href="/32care.html"><img src="img/32Carelogo.png" alt=""></a>
 								</div>
 								
 							</div>
-							<div class="main-menubar d-flex  x-align-items-center">
+							<div class="main-menubar d-flex  align-items-center">
 								<nav class="hide main-menubar-extended ">
-									<a href="#home">Home</a>
-									<a href="#service">Services</a>
-									<a href="#appoinment">Appoinment</a>
-									<a href="#consultant">Consultants</a>
-									<a href="http://blog.32care.com">Health Blog</a>
+									<a id="first-mb" class="hide-menubar  " href="32care.html">Home</a>
+									<a class="hide-menubar" href="#service">Services</a>
+									<a class=" hide-menubar "  href="#appoinment">Appoinment</a>
+									<a class="hide-menubar" href="#consultant">Consultants</a>
+									<a  id="last-mb" class="hide-menubar " href="/BLOG.html">Health Blog</a>
 								</nav>
-								<div class="menu-bar">
-									<span class="lnr lnr-menu">
+								
 										
-									</span></div>
-							</div>
+									 
+									<!-- <a id="back-to-bottom" href="#footer-text" class="btn btn-light btn-lg back-to-bottom" role="button"><i class="fa fa-chevron-down"></i></a> -->
+						      </div>
+						      <div id="nav-icon1"  class="menu-bar">
+									 
+										
+									  <span></span>
+									  <span></span>
+									  <span></span>
+							 </div>
 						</div>
 					</div>
 				</div>
+
+             
 			</header>
 			<!-- End Header Area -->
 
+
 			<!-- start banner Area -->
-			<section class="banner-area relative" id="home" style="background-color: white;">
+			<!-- <section class="banner-area relative" id="home" style="background-color: white;">
 				<div class="container">
 						<div class="row fullscreen align-items-center justify-content-center">
 							<div class="banner-content col-lg-6 col-md-12">
@@ -85,7 +97,7 @@
 							
 						</div>
 				</div>
-			</section>
+			</section> -->
 			<!-- End banner Area -->
 
 			<!-- Start about Area -->
@@ -318,7 +330,7 @@
 			<section class="blog-area section-gap body-section-center ">
 				<div class="container " >
 					<div class="row justify-content-center" style="font-size: 200px">
-						<div class="col-md-8 pb-30 header-text" >
+						<div class="col-md-12 pb-30 header-text" >
 							<h1 >Knowledege to CARE </h1>
 							<p>
 								
@@ -326,7 +338,7 @@
 						</div>
 					</div>
 					<div id="my_blog_teaser" qkr-tmpl url-html="https://www.32care.com/blog/min/">
-						<%= html %>
+						
 					</div>
 
 					<div class="row">
@@ -477,8 +489,11 @@
 												</div>
 											</div>
 
-											<div class="col-md-4">
-												<button class="nw-btn primary-btn">Subscribe<span class="lnr lnr-arrow-right"></span></button>
+											<div class=" col-4 col-md-auto col-xl-4">
+												<div class="nw-btn primary-btn" style="position: absolute; z-index: 1 ; display: none; " >Subscribe<span class="fa fa-caret-right"></span>
+												</div>
+												<div class="sbm-btn" style="z-index: 0; " type="subscribe">Subscribed<span c></span>
+												</div>
 											</div>
 										</div>
 										<div class="info"></div>
@@ -489,30 +504,31 @@
 					</div>
 			   </div>	
 					<div class="container" style="margin-top: 40px;">
-					         <!-- <div class="row"> -->
-					                <div class="col-2" style="font-size: 15px ; font-weight: 600; color: #40686b; ">Stay Connected
+					         <div class="row justify-content-center">
+					                <div class="col-md-2 connected " style="font-size: 15px ; font-weight: 600; color: #40686b; text-align: center; margin-top: 20px; padding-top: 5px; ">Stay Connected
 						            </div>
-							                <div class=" row justify-content-center">
+							                
  
-							        
-                                              <div class=" col-md-auto  col-12 footer-social ">
-													<a href="#" id= "facebook"><i class="fa fa-facebook"></i></a>
-													<a href="#"id= "twitter"><i class="fa fa-twitter"></i></a>
-													<a href="#"id= "linkedin"><i class="fa fa-linkedin"></i></a>
-													<a href="#"id= "instagram"><i class="fa fa-instagram"></i></a>
-													<a href="#"id= "youtube"><i class="fa fa-youtube-play"></i></a>
-													<a href="#"id= "reddit"><i class="fa fa-reddit-alien"></i></a>
-													<a href="#"id= "pinterest"><i class="fa fa-pinterest"></i></a>
-													<a href="#"id= "tumblr"><i class="fa fa-tumblr"></i></a>
-									          </div>
-									        </div>
+							                      <div class=" col-md-auto   footer-social " style="margin-top: 20px;">
+														<a href="https://www.facebook.com/official32care" target="_blank"id= "facebook"><i class="fa fa-facebook"></i></a>
+														<a href="https://twitter.com/official32Care"target="_blank"id= "twitter"><i class="fa fa-twitter"></i></a>
+														<a href="https://www.linkedin.com/company/32care" target="_blank"id= "linkedin"><i class="fa fa-linkedin"></i></a>
+														<a href="https://www.instagram.com/official32care/" target="_blank"id= "instagram"><i class="fa fa-instagram"></i></a>
+														<a href="https://www.youtube.com/channel/UCR48FwJXkOGue_ium3hueqw" target="_blank"id= "youtube"><i class="fa fa-youtube-play"></i></a>
+														<a href="https://www.reddit.com/user/32Care" target="_blank"id= "reddit"><i class="fa fa-reddit-alien"></i></a>
+														<a href="https://in.pinterest.com/official32Care" target="_blank"id= "pinterest"><i class="fa fa-pinterest"></i></a>
+														<a href="https://32care.tumblr.com/" target="_blank"id= "tumblr"><i class="fa fa-tumblr"></i></a>
+										          </div>
+									       
+									<div class="col-md-2" ; >
+						            </div>
 						           
-					        <!-- </div> -->
+					        </div>
 					</div>
 
 
-					<div class="row footer-bottom d-flex justify-content-between">
-						<p class="col-lg-8 col-sm-12 footer-text m-0">
+				    <div id="footer-text" class="footer-bottom d-flex justify-content-between">
+						<p  class="col-lg-8 col-sm-12 footer-text m-0">
 							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -532,7 +548,11 @@
 <!-- Footer -->
 			<!-- End footer Area -->
 
-          <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fa fa-chevron-up"></i></a>
+            <div id="back-to-top" class="btn btn-light btn-lg back-to-top">
+          <a  href="#"  role="button"><i class="fa fa-chevron-up"></i></a>
+          <p class="mirror" >
+           </p>
+        </div>
 
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
