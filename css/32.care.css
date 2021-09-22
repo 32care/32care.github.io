@@ -88,14 +88,20 @@ ul.a {
 }
 
 @media (max-width: 767px){
-    h6 , .footer-nav2  {
-    text-align:right;
+   
+       hr {
+        display: none;
        }
-       .footer-nav1 {
-    text-align:left;
+       h6{
+        margin-right: 80px;
        }
        
-
+       .dent{
+        margin-bottom: 50px;
+       }
+        .join{
+            padding-left: 35px;
+        }
 
        
 
@@ -197,15 +203,18 @@ ul.a {
     max-width: 16.66667%;
     
    }
+   .footer-nav1{
+    margin-top: 15px;
+   }
 }
- @media (max-width: 575px){
+ /*@media (max-width: 575px){
 
  .primary-btn , .sbm-btn {
 
     margin-top: 10px;
  }
 }
-
+*/
 
 
 
@@ -244,7 +253,7 @@ ul.a {
     }
     .main-menubar-extended {
     margin-right: 0px;
-    margin-top: 85px;
+    margin-top: 50px;
    }
 
    
@@ -338,10 +347,10 @@ ul.a {
 }
 
 .sbm-btn {
-        line-height: 42px;
+        line-height: 40px;
     padding-left: 20px;
     padding-right: 20px;
-    border-radius: 25px;
+    border-radius:  0px 25px 25px 0px;
     border: none;
     color: #fff;
     display: inline-block;
@@ -372,8 +381,13 @@ ul.a {
     -webkit-text-fill-color: transparent;
     font-family: "Audiowide", sans-serif;
 }
-.
+
  
+ .single-footer-widget a {
+    font-size: 18px;
+    font-weight: 600;
+    
+ }
 
 
 .col {
@@ -423,7 +437,7 @@ padding: 22px 6px 0px 15px;
  .footer-nav1 a {
     color: #005158;
     /* font-variant-caps: inherit; */
-    font-weight: 400;
+    /*font-weight: 400;*/
     }
    .footer-nav2  a {
     color:#636363;
@@ -598,6 +612,19 @@ p {
     box-shadow: 0px 1px 0px 5px #f0f0f0, 0px 0px 0px 0px #fff, 0px 1px 0px 0px #ffffff00;
     margin-top: 18px;
 }
+
+
+.email  {
+    border-radius: 20px 20px 20px 20px ;
+
+
+}
+
+.padding-lf{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+   
 
   
 .primary-btn2 {
@@ -953,7 +980,16 @@ label input[type="checkbox"]:checked ~ span:nth-of-type(3){
 
 
 
-.modal {
+                                         /*Find dentist tab*/
+
+
+
+
+ 
+   input:focus-visible {
+             outline: -webkit-focus-ring-color auto 0px;
+    }
+    .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -967,10 +1003,58 @@ label input[type="checkbox"]:checked ~ span:nth-of-type(3){
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+/* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #dddddd;
   margin: auto;
-  padding: 50px;
+  padding: 20px;
   border: 1px solid #888;
   width: 80%;
+}
+
+/* The Close Button */
+.close-find{
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  align-self:start;
+}
+
+.close-find:hover,
+.close-find:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.find {
+    cursor: pointer;
+    line-height: 42px!important;
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+    border-radius: 25px 25px 25px 25px!important;
+    border: none!important;
+    color: #fff!important;
+    display: inline-block!important;
+    font-weight: 500!important;
+    position: relative;
+    background-image: -webkit-linear-gradient(
+0deg
+, #44bec9 0%, #67e4ee 100%)!important;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    outline: 0px;
+    cursor: pointer;
+    width: 120px!important;
+    box-shadow: 0px 1px 20px 5px #72727252;
+}
+.find:active{
+    box-shadow: none;
+}
+.find:focus{
+    box-shadow: none;
+}
 }

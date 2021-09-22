@@ -12,7 +12,21 @@ $(document).ready(function(){
 				$('body').removeClass('win-scrolled-100');
 			}
 });
-
+								jQuery(document).ready(function($) {
+				  var alterClass = function() {
+				    var ww = document.body.clientWidth;
+				    if (ww < 768) {
+				      $('.single-footer-widget').addClass('row');
+				    } else if (ww >= 767) {
+				      $('.single-footer-widget').removeClass('row');
+				    };
+				  };
+				  $(window).resize(function(){
+				    alterClass();
+				  });
+				  //Fire it when the page first loads:
+				  alterClass();
+				});
 
 		// scroll body to 0px on click
 		$('#back-to-top').click(function () {

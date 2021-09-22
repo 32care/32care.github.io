@@ -2012,10 +2012,10 @@ nav.hide {
 
 }
 .primary-btn  {
-  line-height: 42px!important;
+  line-height: 40px!important;
   padding-left: 20px!important;
   padding-right: 20px!important;
-  border-radius: 25px!important;
+  border-radius: 0px 25px 25px  0px!important;
   border: none!important;
   color: #fff!important;
   display: inline-block!important;
@@ -2577,8 +2577,8 @@ nav.hide {
 h6 {
   color: #fff;
   
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 p {
@@ -2640,7 +2640,7 @@ p {
   border: none;
   background: #fff;
   font-weight: 300;
-  border-radius: 20px;
+  border-radius: 20px 0px 0px 20px;
   color: #777;
   padding-left: 15px;
   width: 100%;
@@ -2656,16 +2656,11 @@ p {
 }
 
 @media (max-width: 1200px) and (min-width: 768px ) {
-  .single-footer-widget .nw-btn {
-    margin-top: 10px;
-  }
+ 
   .single-footer-widget .newsletter {
     padding-bottom: 40px;
   }
-  .sbm-btn{
-    margin-top: 10px;
-
-  }
+ 
 }
 
 

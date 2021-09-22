@@ -49,11 +49,12 @@
 							<div class="main-menubar d-flex  align-items-center">
 								<nav class="hide main-menubar-extended ">
 									<a id="first-mb" class="hide-menubar  " href="#home">Home</a>
-									
-									<a class=" appoinment2 hide-menubar "  href="#appoinment">Appoinment</a>
-									<a class="hide-menubar" href="#consultant">Consult</a>
-									<a class="hide-menubar" href="Join.html">Join 32care </a>
+									<!-- <a class=" appoinment2 hide-menubar "  href="#appoinment">Appoinment</a>
+									<a class="hide-menubar" href="#consultant">Consult</a> -->
+									<a class="hide-menubar" href="Join.html">Profile</a>
 									<a  id="last-mb" class="hide-menubar " href="/blog.html">Blog</a>
+									<a  class="hide-menubar  " href="#home">Dentists</a>
+									<a class="hide-menubar  " href="#home">About</a>
 								</nav>
 								
 										
@@ -91,9 +92,46 @@
 									 
 								</h1>
 								<p>
-									Connect to your ..
+									Find   
 								</p>
-<!-- 
+
+								<button id="myBtn" class="find" style="outline: none; ">Dentist</button>
+
+<!-- The Modal -->
+									<div id="myModal" class="modal">
+
+									  <!-- Modal content -->
+								    <div class="modal-content" style="border-radius: 10px;">
+									  	<form role="form" name="searchForm"class="row " style="margin-top: 15px;">
+									  		<div class="form-group col-3 row" style="padding-right: 0px;" >
+									  			<input class="col" style="border: none; outline: none;" type="text"  id="searchBox" name="searchBox" minlength="1" placeholder="Location" required="" autocomplete="off" data-toggle="dropdown" >
+									  			<div class="dropdown-menu dropdown-height" aria-labelledby="select-location">
+											  				<ul>
+											  				<li><a href="">All Locations</a></li>
+											  				<li><a href="">Delhi</a></li>
+											  				<li><a href="">Haryana</a></li>
+											  				<li><a href="">Punjab</a></li>
+											  				<li><a href="">Utter Pradesh</a></li>
+											  				<li><a href="">Jammu & Kashmir</a></li>
+											  				</ul>
+									  			       </div>
+									  			
+									  		</div>
+									  		
+									  		
+									  		 <div class="form-group col row" style="padding-left: 0px; " >
+									  			<input class="col" style="border-width: 0px 0px 0px 3px; border-color: aqua;outline: none;" type="text"  id="searchBox" name="searchBox" minlength="1" placeholder="Type   a   Dentist  or  Clinic's  Name" required="" autocomplete="off">
+									  			 <button   type="button"style="background-color: #38959d;color: white;outline: none;    border: none;cursor: pointer;"><i class="fa fa-search search-style-icon" ></i>
+									  			 </button>
+									  		</div>
+									  	</form>
+
+									    <div class="close-find">&times;</div>
+									    
+									    </div>
+
+									</div>
+									<!-- 
 								<a href="#appoinment" id="booking-btn" class=" Get-started primary-btn2 mt-20  " >Book an Appoinment
 								</a>
 								<button id="confmed-btn"  disabled="true" class="  hide-it mt-20 text-uppercase confmed-btn   ">Confirmed  <span class="fas fa-check-circle"></span>
@@ -528,65 +566,71 @@
 
 			<!-- start footer Area -->
 			<footer class="footer-area section-gap">
-				<div class="container">
-					<div class="row">
-						<div class="col-5 col-md-2">
-							<div class="single-footer-widget">
-								<h5  >Join 32Care</h5>
-								<br>
-								<ul class="footer-nav1">
-									<li><a href="Join.html">For Dentist </a></li><hr>
-									<li><a href="#" >For Patients</a></li>
-																</ul>
-								<!-- <ul class="footer-nav">
-									<li><a href="#">Managed Website</a></li>
-									<li><a href="#">Manage Reputation</a></li>
-									<li><a href="#">Power Tools</a></li>
-									<li><a href="#">Marketing Service</a></li>
-								</ul> -->
-							</div>
-						</div>
-						<div class="col-7 col-md-4">
-							<div class="single-footer-widget">
-								<h6>Associated Groups</h6>
-								<br>
-								<ul class="footer-nav2">
-									<li><a href="#">Group</a></li>
-									<li><a href="#"> Reputation</a></li>
-									<li><a href="#">Power Tools</a></li>
-									<li><a href="#">Marketing Service</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class=" col-md-6">
-							<div class="single-footer-widget newsletter">
-								<h6 style="text-align: left;">Contact Us</h6>
-								<br>
-								<div id="mc_embed_signup">
-									<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
+                <div class="container">
+                    <div class="row justify-content-around">
+                        <div class="col-md-auto">
+                            <div class="single-footer-widget dent ">
+                                <h6 style="align-self: center;" >For Dentists</h6>
+                                <br>
+                                <ul  class="footer-nav1">
+                                    <a class="join" style="padding-right: 33px;" href="Join.html">Join </a>
+                                    
+                                   <h  href="#" style="font-size: 20px; font-weight: 500;color: #8f8f8f;" > I </h>
+                                    <a style="padding-left: 30px;" href="#" >Login </a>
+                                    
+                                </ul>
+                                <!-- <ul class="footer-nav">
+                                    <li><a href="#">Managed Website</a></li>
+                                    <li><a href="#">Manage Reputation</a></li>
+                                    <li><a href="#">Power Tools</a></li>
+                                    <li><a href="#">Marketing Service</a></li>
+                                </ul> -->
+                            </div>
+                        </div>
+                        
+                        <div class=" col-md-auto">
+                            <div class="single-footer-widget newsletter ">
+                                <h6 style="text-align: left; align-self: center;">For All</h6>
+                                <br>
+                                <div id="mc_embed_signup">
+                                    <form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
 
-										<div class="form-group row" style="width: 100%; margin: auto; ">
-											<div class="col-12 col-sm-8 col-md-12 col-xl-8">
-												<input name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
-												<div style="position: absolute; left: -5000px;">
-													<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-												</div>
-											</div>
+                                        <div class="form-group row"  >
+                                            <div class="col email padding-lf">
+                                                <input style="width: 270px;" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
+                                                <!-- <div class="padding-lf" style="position: absolute; left: -5000px;">
+                                                    <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+                                                </div> -->
+                                            </div>
 
-											<div class=" col-4 col-md-auto col-xl-4">
-												<div class="nw-btn primary-btn" style="position: absolute;  display: none; " >Subscribe<span class="fa fa-caret-right"></span>
-												</div>
-												<div class="sbm-btn"  type="subscribe">Subscribed<span c></span>
-												</div>
-											</div>
-										</div>
-										<div class="info"></div>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-			   </div>	
+                                            <div class=" col padding-lf">
+                                                <div class="nw-btn primary-btn" style="position: absolute;  display: none; " >Subscribe<span class="fa fa-caret-right"></span>
+                                                </div>
+                                                <div class="sbm-btn"  type="subscribe">Subscribed<span c></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info"></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                       <!--  <div class="col-7 col-md-4">
+                            <div class="single-footer-widget">
+                                <h6>Associated Groups</h6>
+                                <br>
+                                <ul class="footer-nav2">
+                                    <li><a href="#">Group</a></li>
+                                    <li><a href="#"> Reputation</a></li>
+                                    <li><a href="#">Power Tools</a></li>
+                                    <li><a href="#">Marketing Service</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </div>
+               </div>   
+				
+			   	
 					<div class="container" style="margin-top: 40px;">
 					         <div class="row justify-content-center">
 					                <div class="col-md-2 connected " style="font-size: 15px ; font-weight: 600; color: #40686b; text-align: center; margin-top: 20px; padding-top: 5px; ">Stay Connected
@@ -611,8 +655,8 @@
 					</div>
 
 
-					<div id="footer-text" class="footer-bottom d-flex justify-content-between">
-						<p  class="col-lg-8 col-sm-12 footer-text m-0">
+					<div id="footer-text" class="footer-bottom d-flex justify-content-center">
+						<p  class="col-md-auto">
 							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -651,6 +695,33 @@
 			<script src="https://cdn.jsdelivr.net/gh/quikrs/quikr.js@master/quikr.js"></script>
 			<script src="js/main.js"></script>
 			<script src="js/32care.js"></script>
+			<script>
+					// Get the modal
+					var modal = document.getElementById("myModal");
+
+					// Get the button that opens the modal
+					var btn = document.getElementById("myBtn");
+
+					// Get the <span> element that closes the modal
+					var span = document.getElementsByClassName("close-find")[0];
+
+					// When the user clicks the button, open the modal 
+					btn.onclick = function() {
+					  modal.style.display = "block";
+					}
+
+					// When the user clicks on <span> (x), close the modal
+					span.onclick = function() {
+					  modal.style.display = "none";
+					}
+
+					// When the user clicks anywhere outside of the modal, close it
+					/*window.onclick = function(event) {
+					  if (event.target == modal) {
+					    modal.style.display = "none";
+					  }
+					}*/
+               </script>
    
         <div id="overlay" >
         	
