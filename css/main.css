@@ -2021,16 +2021,14 @@ nav.hide {
   display: inline-block!important;
   font-weight: 500!important;
   position: relative;
-      background-image: -webkit-linear-gradient(0deg, #044d53 0%, #67e4ee 100%)!important;
+   background-image: -webkit-linear-gradient(180deg, #044d53 50%, #ffffff 100%)!important;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   cursor: pointer;
       width: 120px!important;
-
-
-
+      
 }
 
 
@@ -2041,7 +2039,7 @@ nav.hide {
 .primary-btn span {
   color: #fff;
   position: absolute;
-  top: 50%;
+  top: 57%;
   transform: translateY(-60%);
   right: 15px;
   -webkit-transition: all 0.3s ease 0s;
@@ -2068,7 +2066,7 @@ nav.hide {
 
 .primary-btn:hover {
   color: #fff;
-  background-image: -webkit-linear-gradient(0deg, #044d53 30%, #67e4ee 100%)!important;
+  
 }
 
 .primary-btn:hover span {

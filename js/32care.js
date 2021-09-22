@@ -143,8 +143,8 @@ $('.close-consult').on('click',   function(e){
 
 $('.primary-btn').on('click',   function(e){
 			$(".primary-btn span").removeClass("fa fa-caret-right fadeOut")
-			$(".primary-btn").removeClass("primary-btn")
-			$(".sbm-btn").addClass("sbm-btn")
+			$(".primary-btn").addClass("hide-it")
+			$(".sbm-btn").removeClass("hide-it")
 
 });
 

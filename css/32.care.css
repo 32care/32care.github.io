@@ -93,7 +93,7 @@ ul.a {
         display: none;
        }
        h6{
-        margin-right: 80px;
+        margin-right: 47px;
        }
        
        .dent{
@@ -207,14 +207,61 @@ ul.a {
     margin-top: 15px;
    }
 }
- /*@media (max-width: 575px){
+ @media (max-width: 539px) and (min-width: 390px){
 
- .primary-btn , .sbm-btn {
+ /*.primary-btn , .sbm-btn {
 
     margin-top: 10px;
+ }*/
+ .footer-nav1 , .form-group {
+    margin-top: 10px;
  }
+
+     .email{
+        width: 225px;
+     }
+      .sbm-btn , .primary-btn {
+        padding-left: 10px!important ;
+        padding-right: 10px!important;
+        width: 100px!important;
+        text-align: center;
+        
+
+      }
+      .primary-btn span {
+        display: none;
+    }
 }
-*/
+
+
+@media (max-width: 389px){
+
+   .primary-btn span {
+        display: none;
+
+    }
+    .sbm-btn , .primary-btn {
+        padding-left: 10px!important ;
+        padding-right: 10px!important;
+        width: 100px!important;
+        left: 80px!important;
+        border-radius: 0px 0px 20px 20px!important;
+        text-align: center;
+      background-image: -webkit-linear-gradient(90deg, #044d53 50%, #ffffff 100%)!important;
+
+      }
+      .single-footer-widget input {
+    
+    border-radius: 20px 20px 20px 20px;
+     }
+     .footer-nav1 , .form-group {
+    margin-top: 10px;
+ }
+
+
+}
+
+
 
 
 
@@ -350,19 +397,22 @@ ul.a {
         line-height: 40px;
     padding-left: 20px;
     padding-right: 20px;
-    border-radius:  0px 25px 25px 0px;
+    border-radius: 0px 25px 25px 0px;
     border: none;
-    color: #fff;
+    color: #ffft;
     display: inline-block;
     font-weight: 500;
-    /*position: relative;*/
-    background-image: -webkit-linear-gradient(0deg, #044d53 0%, #044d53 100%);
+    position: relative;
+    background-image: -webkit-linear-gradient(
+180deg
+, #044d53 50%, #ffffff 100%);
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     cursor: pointer;
-    width: 119px;        
+    width: 120px;
+     
 }
   
 
@@ -1039,9 +1089,7 @@ label input[type="checkbox"]:checked ~ span:nth-of-type(3){
     display: inline-block!important;
     font-weight: 500!important;
     position: relative;
-    background-image: -webkit-linear-gradient(
-0deg
-, #44bec9 0%, #67e4ee 100%)!important;
+       background-image: -webkit-linear-gradient( 0deg, #67dedd 0%, #59d9e2 100%)!important;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
@@ -1049,7 +1097,7 @@ label input[type="checkbox"]:checked ~ span:nth-of-type(3){
     outline: 0px;
     cursor: pointer;
     width: 120px!important;
-    box-shadow: 0px 0px 20px 5px #72727252;
+    box-shadow: 0px 0px 20px 0px #b2b2b2;
 }
 .find:active{
     box-shadow: none;
