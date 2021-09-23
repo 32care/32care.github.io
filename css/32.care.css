@@ -1050,10 +1050,18 @@ label input[type="checkbox"]:checked ~ span:nth-of-type(3){
    input:focus-visible {
              outline: -webkit-focus-ring-color auto 0px;
     }
+
+
+
+    .find-tab{
+
+
+        z-index: 10;
+    }
     .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
@@ -1075,7 +1083,7 @@ label input[type="checkbox"]:checked ~ span:nth-of-type(3){
 
 /* The Close Button */
 .close-find{
-  color: #aaaaaa;
+  color: #43aab0;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -1084,7 +1092,7 @@ label input[type="checkbox"]:checked ~ span:nth-of-type(3){
 
 .close-find:hover,
 .close-find:focus {
-  color: #000;
+  color: #57c8cf;
   text-decoration: none;
   cursor: pointer;
 }
