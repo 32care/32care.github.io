@@ -2193,12 +2193,7 @@ nav.hide {
   margin-bottom: 20px;
 }
 
-@media (max-width: 991px) {
-  .banner-content h1 {
-    font-size: 36px;
-    margin-bottom: 50px;
-  }
-}
+
 
 @media (max-width: 991px) {
   .banner-content h1 br {
@@ -2206,7 +2201,14 @@ nav.hide {
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 991px) {
+  .banner-content h1 {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width:992px ) and  (max-width: 1199px) {
   .banner-content h1 {
     font-size: 45px;
   }
