@@ -233,7 +233,7 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
-  margin-bottom: 20px;
+  
 }
 
 svg:not(:root) {
@@ -458,7 +458,7 @@ hr {
   margin-bottom: 1rem;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-      width: 75px;
+      width: 0px;
     margin-left: 0;
 }
 }

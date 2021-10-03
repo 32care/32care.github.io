@@ -14,7 +14,7 @@
         <!-- meta character set -->
         <meta charset="UTF-8">
         <!-- Site Title -->
-        <title>Medical</title>
+        <title>Dental</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 
 
@@ -83,36 +83,27 @@
                             
                             <img  src="img/image-asset.jpeg" class=" d-md-block d-lg-none" style="max-height: 100%; max-width: 100%; max-height: 100%; max-width: 100%;    position: absolute;    height: 300px;    bottom: 0px;" />
                             <div class=" banner-content    col-lg-6 col-md-12" style="position: relative; text-align: center;">
-                                <h1 class=" text-uppercase banner-header" style="font-size: 40px;" >
+                                <h1 class=" text-uppercase banner-header" style="font-size: 40px; " >
                                      
-                                        Create your <br>  Professional <br> Profile 
+                                          Create your <br>  Professional <br> Profile 
                                      
                                      
                                 </h1>
-                                <p style="font-size: 18px;
+                                      <p style="  font-size: 18px;
                                             font-weight: 700;
                                             max-width: 730px;
                                             font-family: inherit;
                                             color: #044d53a3;
                                             text-shadow: 0px 0px 6px #ffffff, 0 0 20px #ffffff, 0 0 20px #f4f4f4;">
-                                      Connect Globally
-                                      <br>
-                                      <br>
+                                          Connect Globally
+                                            <hr>
+                            <button onclick="document.getElementById('cp-tab').style.display='block'" class="Get-started primary-btn2 mt-20  ">Register</button>
+                            <button onclick="document.getElementById('lp-tab').style.display='block'" class="Get-started2 primary-btn5 mt-20  ">Login</button>
 
-                                <a href="#appoinment" id="booking-btn" class=" Get-started primary-btn2 mt-20  " >Register<!-- <span class="fad fa-caret-down"></span> -->
-                                </a>
-                             <!--    <button id="confmed-btn"  disabled="true" class="  hide-it mt-20 text-uppercase confmed-btn   ">Confirmed  <span class="fas fa-check-circle"></span>
 
-                                </button> -->
-<!-- 
-                                <a href="#appoinment"  id="new-book" class="  hide-it mt-20 text-uppercase primary-btn6   ">New  <span ></span>
+                  
 
-                                </a> -->
-
-                                <a href="#appoinment" id="consult-btn" class=" Get-started2 primary-btn5 mt-20  " >Login<!-- <span class="fad fa-caret-down"></span> -->
-                                </a>
-
-                                <!-- <button id="confmed-btn"  disabled="true" class=" Get-started confmed-btn mt-20 text-uppercase " style="z-index: 200;  ">Booking Confirmed <span class="fas fa-check"></span> -->
+                               
 
                                 </button>
                             </div>
@@ -125,18 +116,132 @@
                 </div>
                 
             </section>
-            <!-- End banner Area -->
 
-            <!-- Start about Area -->
-            <section class="about-area appoinment-hide"  id="appoinment">
-                <div class="container">
-                    <div class="row d-flex justify-content-center align-items-center">
+
+            <!-- create profile -->
+            <div class="about-area appoinment-hide"  id="cp-tab" >
+                             <div class="container">
+                              <div class="row d-flex justify-content-center align-items-center p-tab">
                         <!-- <div class="col-lg-6 col-md-12 about-left no-padding">
                             <img class="img-fluid" src="img/about-img.jpg" alt="">
                         </div> -->
                         <div class="col-lg-12 col-md-12 about-right no-padding">
                             <div class="col-12" style="  z-index: 200;">
                             <!-- <h1>Book an Appoinment</h1> -->
+                            <form  class="col-12 " method=GET class="booking-form" id="myForm" action="https://docs.google.com/forms/d/e/1FAIpQLSf_rY6VVPjPDWOLpLXcGuLdRtGsL93GUrnPwpih_ldFfwR-Hw/viewform?usp=pp_url">
+                                    <div class="row">
+                                        <div class="col-lg-12 d-flex flex-column">hello
+                                            <input name="entry.1507188961" placeholder="Patient name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Patient name'" class="form-control mt-20" required="" type="text" required>
+                                        </div>
+                                        <div class="col-lg-6 d-flex flex-column">hello
+                                            <input name="entry.1590822912" placeholder="Phone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'" class="form-control mt-20" required="" type="text" required>
+                                        </div>
+                                        <div class="col-lg-6 d-flex flex-column">
+                                            <input id="datepicker2" name="entry.1313414293" class="single-in mt-20"  onblur="this.placeholder = 'Appoinment date'" type="text" placeholder="Appoinment date" required>
+                                        </div>
+                                        <div class="col-lg-6 d-flex flex-column">
+                                            <input id="datepicker2" name="entry.1313414293" class="single-in mt-20"  onblur="this.placeholder = 'Appoinment date'" type="text" placeholder="Select Location" required>
+                                        </div>
+                                        <div class="col-lg-6 d-flex flex-column">
+                                            <input id="datepicker2" name="entry.1313414293" class="single-in mt-20"  onblur="this.placeholder = 'Appoinment date'" type="text" placeholder="Doctor's Name" required>
+                                        </div>
+                                       <!--  <div class="col-lg-12 flex-column">
+                                            <textarea class="form-control mt-20" name="entry.824006088" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
+                                        </div> -->
+
+                                        <div class="col-lg-12 d-flex justify-content-between send-btn">
+                                            <a href="#appoinment" onclick="document.getElementById('cp-tab').style.display='none'" class="close-booking primary-btn4 mt-20 text-uppercase "style="z-index: 200;">
+                                                <span class="fas fa-times"></span></a>
+                                            <a href="#home" class="confirm-booking submit-btn primary-btn3 mt-20 text-uppercase ">confirm booking<span class="lnr lnr-arrow-right"></span></a>
+                                            
+                                        </div>
+
+                                        <div class="alert-msg"></div>
+                                    </div>
+                            </form>
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <!-- login profile -->
+            <div class="about-area appoinment-hide"  id="lp-tab" >
+                             <div class="container">
+                              <div class="row d-flex justify-content-center align-items-center p-tab" >
+                        
+                        <div class="col-lg-12 col-md-12 about-right no-padding">
+                            <div class="col-12" style="  z-index: 200;">
+                            <a href="#appoinment" onclick="document.getElementById('lp-tab').style.display='none'" class="close-booking primary-btn4 text-uppercase "style="z-index: 200; float: right;">
+                                <span class="fas fa-times"></span>
+                            </a>
+                           
+                            <form  class="col-12 " method=GET class="booking-form" id="myForm" action="https://docs.google.com/forms/d/e/1FAIpQLSf_rY6VVPjPDWOLpLXcGuLdRtGsL93GUrnPwpih_ldFfwR-Hw/viewform?usp=pp_url">
+                                    <div class="row">
+                                        <div class="col-lg-12 d-flex flex-column">Username / Email-ID / Mobile.no
+                                            <input name="entry.1507188961" placeholder="Username/Email-ID/Mobile.no"  class="form-control mt-20" required="" type="text" required>
+                                        </div>
+                                        <div id="password" class="col-lg-12 col-md-7 col-xl-7 flex-column row">Password
+                                            <input name="entry.1590822912" placeholder="Password"  class="form-control mt-20" required="" type="text" required>
+                                             
+                                        </div>
+                                        <div id="otp" class="col-lg-12 col-md-12 col-xl-12 d-none flex-column row" >
+                                            <div class="otp-btn">Generate OTP
+                                                </div>
+                                            <input style="width: 170px;" name="entry.1590822912" placeholder="OTP"  class="form-control mt-20" required="" type="text" required>
+                                             
+                                        </div>
+                                        <a class="forgot-p" >
+                                             Forgot Password?
+                                        </a>
+                                       
+                                       <div class="remember-me col-lg-12">
+                                        <br>
+                                           <div class="remember">
+                                            <input  id="remember" name="remember" type="checkbox" value="y">
+                                             <label class="mousePointer textMuted line-height-20" for="remember" style="margin-left:10px; margin-top:0px">Remember me </label>
+                                          </div>
+                                     </div>
+                                     <br>
+                                    
+                                    <div class=" col justify-content-between row">
+                                           <div class="remember">
+                                            <input id="login-otp" name="otp" type="checkbox" value="y">
+                                             <label class="mousePointer textMuted line-height-20" for="login-otp" style="margin-left:10px">Login with OTP</label>
+                                           </div>
+
+                                           <div class="col-md-auto primary-btn3" style="padding-right: 0px; ">
+                                            
+                                            Login<span class="lnr lnr-arrow-right">
+                                                
+                                            </span>
+                                            
+                                           </div>
+                                           
+                                        </div>
+                                       
+
+                                        <div class="alert-msg"></div>
+                                    </div>
+                            </form>
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End banner Area -->
+
+            <!-- Start about Area -->
+            <!-- <section class="about-area appoinment-hide"  id="appoinment">
+                <div class="container">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        
+                        <div class="col-lg-12 col-md-12 about-right no-padding">
+                            <div class="col-12" style="  z-index: 200;">
+                            
                             <form  class="col-12 " method=GET class="booking-form" id="myForm" action="https://docs.google.com/forms/d/e/1FAIpQLSf_rY6VVPjPDWOLpLXcGuLdRtGsL93GUrnPwpih_ldFfwR-Hw/viewform?usp=pp_url">
                                     <div class="row">
                                         <div class="col-lg-12 d-flex flex-column">
@@ -173,19 +278,17 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <!-- End about Area -->
 
             <!-- Start about Area -->
-            <section class="about-area consult-hide"  id="consult">
+            <!-- <section class="about-area consult-hide"  id="consult">
                 <div class="container">
                     <div class="row d-flex justify-content-center align-items-center">
-                        <!-- <div class="col-lg-6 col-md-12 about-left no-padding">
-                            <img class="img-fluid" src="img/about-img.jpg" alt="">
-                        </div> -->
+                       
                         <div class="col-lg-12 col-md-12 about-right no-padding">
                             <div class="col-12" style="  z-index: 200;">
-                            <!-- <h1>Book an Appoinment</h1> -->
+                            
                             <form  class="col-12 " method=GET class="booking-form" id="myForm" action="https://docs.google.com/forms/d/e/1FAIpQLSf_rY6VVPjPDWOLpLXcGuLdRtGsL93GUrnPwpih_ldFfwR-Hw/viewform?usp=pp_url">
                                     <div class="row">
                                         <div class="col-lg-12 d-flex flex-column">
@@ -222,7 +325,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <!-- End about Area -->
 
             <!-- Start feature Area -->
@@ -531,25 +634,60 @@
             </section > -->
             <!-- end blog Area -->
 
+       
+
             <!-- start footer Area -->
             <footer class="footer-area section-gap">
                 <div class="container">
                     <div class="row justify-content-around">
                         <div class="col-md-auto">
-                            <div class="single-footer-widget dent ">
+                            <div class="single-footer-widget2 dent ">
                                 <h6 style="align-self: center;" >For Dentists</h6>
                                 <br>
                                 <ul  class="footer-nav1">
-                                    <a class="join" style="padding-right: 30px;" href="Join.html">Join </a>
                                     
-                                   <h  href="#" style="font-size: 20px; font-weight: 500;color: #8f8f8f;" > I </h>
-                                    <a style="padding-left: 30px;" href="#" >Login </a>
+                                    
+                                   <h  href="#" style="font-size: 18px; font-weight: 600;color: #005158; margin-right: 50px;" > Find </h>
+                                    <button id="myBtn" class="find" style="outline: none; ">Dentist</button>
+
+                                    <div id="myModal" class="modal find-tab  ">
+        <!-- Modal content -->
+                                    <div class="modal-content" style="border-radius: 10px;">
+                                        <form role="form" name="searchForm"class="row " style="margin-top: 15px;">
+                                            <div class="form-group col-4 col-md-3 row" style="padding-right: 0px;" >
+                                                <input class="col" style="border: none; outline: none;" type="text"  id="searchBox" name="searchBox" minlength="1" placeholder="Location" required="" autocomplete="off" data-toggle="dropdown" >
+                                                <div class="dropdown-menu dropdown-height" aria-labelledby="select-location">
+                                                            <ul>
+                                                            <li><a href="">All Locations</a></li>
+                                                            <li><a href="">Delhi</a></li>
+                                                            <li><a href="">Haryana</a></li>
+                                                            <li><a href="">Punjab</a></li>
+                                                            <li><a href="">Utter Pradesh</a></li>
+                                                            <li><a href="">Jammu & Kashmir</a></li>
+                                                            </ul>
+                                                       </div>
+                                                
+                                            </div>
+                                            
+                                            
+                                             <div class="form-group col row" style="padding-left: 0px; " >
+                                                <input class="col" style="border-width: 0px 0px 0px 3px; border-color: aqua;outline: none;" type="text"  id="searchBox" name="searchBox" minlength="1" placeholder="Type   a   Dentist  or  Clinic's  Name" required="" autocomplete="off">
+                                                 <button   type="button"style="background-color: #38959d;color: white;outline: none;    border: none;cursor: pointer;"><i class="fa fa-search search-style-icon" ></i>
+                                                 </button>
+                                            </div>
+                                        </form>
+
+                                        <div class="close-find">&times;</div>
+                                        
+                                        </div>
+
+                                    </div>
                                     
                                 </ul>
                                 <!-- <ul class="footer-nav">
                                     <li><a href="#">Managed Website</a></li>
                                     <li><a href="#">Manage Reputation</a></li>
-                                    <li><a href="#">Power Tools</a></li>
+                                    <li><a href="#">Power Tools</a></li> 
                                     <li><a href="#">Marketing Service</a></li>
                                 </ul> -->
                             </div>
@@ -557,23 +695,23 @@
                         
                         <div class=" col-md-auto">
                             <div class="single-footer-widget newsletter ">
-                                <h6 style="text-align: left; align-self: center;">For All</h6>
+                                <h6 style="text-align: left; align-self: center;">For Updates</h6>
                                 <br>
                                 <div id="mc_embed_signup">
                                     <form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
 
                                         <div class="form-group row"  >
                                             <div class="col email padding-lf">
-                                                <input style="width: 270px;" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
-                                                <div class="padding-lf" style="position: absolute; left: -5000px;">
+                                                <input style="width: 270px; border-radius: 20px 0px 0px 20px;" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
+                                                <!-- <div class="padding-lf" style="position: absolute; left: -5000px;">
                                                     <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-                                                </div>
+                                                </div> -->
                                             </div>
 
                                             <div class=" col padding-lf">
-                                                <div class="nw-btn primary-btn" style="position: absolute;  display: none; " >Subscribe<span class="fa fa-caret-right"></span>
+                                                <div class="nw-btn primary-btn"  >Subscribe<span class="fa fa-caret-right"></span>
                                                 </div>
-                                                <div class="sbm-btn"  type="subscribe">Subscribed<span c></span>
+                                                <div class="sbm-btn hide-it"  type="subscribe">Subscribed<span c></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -620,10 +758,10 @@
                     </div>
 
 
-                    <div id="footer-text" class="footer-bottom d-flex justify-content-between">
-                        <p  class="col-lg-8 col-sm-12 footer-text m-0">
+                    <div id="footer-text" class="footer-bottom d-flex justify-content-center">
+                        <p  class="col-md-auto">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                         <!-- <div class="col-lg-4 col-sm-12 footer-social">
@@ -636,7 +774,9 @@
                     </div> -->
                 </div>
             </footer>
+
             <!-- Footer -->
+     
 
 <!-- Footer -->
             <!-- End footer Area -->
@@ -660,9 +800,32 @@
             <script src="https://cdn.jsdelivr.net/gh/quikrs/quikr.js@master/quikr.js"></script>
             <script src="js/main.js"></script>
             <script src="js/32care.js"></script>
+            <script src="https://embed.small.chat/T02FBHRRC1HC02FBLQBAPL.js" async></script>
+            <script>
+                    // Get the modal
+                    var modal = document.getElementById("myModal");
+
+                    // Get the button that opens the modal
+                    var btn = document.getElementById("myBtn");
+
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close-find")[0];
+
+                    // When the user clicks the button, open the modal 
+                    btn.onclick = function() {
+                      modal.style.display = "block";
+                    }
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() {
+                      modal.style.display = "none";
+                    } 
+            </script>
+
    
         <div id="overlay" >
             
         </div>
+
 </body>
     </html>

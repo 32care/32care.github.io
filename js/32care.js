@@ -15,7 +15,7 @@ $(document).ready(function(){
 								jQuery(document).ready(function($) {
 				  var alterClass = function() {
 				    var ww = document.body.clientWidth;
-				    if (ww < 768) {
+				    if (ww < 991) {
 				      $('.single-footer-widget').addClass('row');
 				    } else if (ww >= 767) {
 				      $('.single-footer-widget').removeClass('row');
@@ -48,19 +48,86 @@ $(document).ready(function(){
 			//do something.
 			console.log("Go PRef",this,	 elem.dataset.next, elem.dataset.prev)
 		});
+
+   
+   		$( 'body').on( 'click','#login-otp', function( e ) {
+   			var isChckd = $( '#login-otp')[0].checked;
+
+   			if(isChckd){
+   				$( '#otp' ).toggleClass('d-none');
+   				$( '#password' ).toggleClass('d-none');
+   				$( '.forgot-p' ).toggleClass('d-none');
+   				$( '.remember-me' ).toggleClass('d-none');
+   			} else {
+   				$( '#otp' ).toggleClass('d-none');
+   				$( '#password' ).toggleClass('d-none');
+   				$( '.forgot-p' ).toggleClass('d-none');
+   				$( '.remember-me' ).toggleClass('d-none');
+   			}
+
+     	} );
+
+   		// Get the button that opens the modal and bind event
+   		$( 'body').on( 'click','.my-find-dentist', function( e ) {
+			var modal = document.getElementById("myModal");    			// Get the modal
+			modal.style.display = "block";
+     	});
+
+     	// Get the button that opens the modal and bind event
+   		$( 'body').on( 'click','.close-find', function( e ) {
+			var modal = document.getElementById("myModal");    			// Get the modal
+			modal.style.display = "none";
+     	});
+
 });
 
-$(".Get-started, .confirm-booking, .close-booking   ").on('click', function(e){
-      /*e.preventDefault();//*/
+				$(".join ").on('click', function(e){
+				     $(this).addClass('my-focused-link')
+				      $(".wwd").addClass('d-none');
+				      $(".cpp").removeClass('d-none');
+				      $(".find").removeClass('my-focused-link')
+
+				 });
+
+				$(".find ").on('click', function(e){
+				      $(this).addClass('my-focused-link')
+				      $(".wwd").removeClass('d-none');
+				      $(".cpp").addClass('d-none');
+				      $(".join").removeClass('my-focused-link')
+
+				 });
+
+
+
+		$(".Get-started  ").on('click', function(e){   
+        	$(".primary-btn2").addClass(" primary-btn-clicked ");
+        	$(".Get-started span").toggleClass("fa-caret-down       fa-tooth");
+    	})
+
+		$(".close  ").on('click', function(e){   
+        	$(".primary-btn2").removeClass(" primary-btn-clicked ");
+        	$(".primary-btn5").removeClass(" primary-btn-clicked ");
+        	$(".Get-started span").toggleClass("fa-caret-down       fa-tooth");
+    	})
+
+    	$(".Get-started2  ").on('click', function(e){   
+        	$(".primary-btn5").addClass(" primary-btn-clicked ");
+        	$(".Get-started span").toggleClass("fa-caret-down       fa-tooth");
+    	})
+
+
+
+/*$(".Get-started, .confirm-booking, .close-booking   ").on('click', function(e){
+     
       $("#appoinment").toggleClass('appoinment-hide');
       $("#overlay").toggleClass('overlay');
 
  });
 
 $(".appoinment2   ").on('click', function(e){
-      /*e.preventDefault();//*/
+      
       $("#appoinment").toggleClass('appoinment-hide');
-      /*$("#booking-btn").toggleClass("primary-btn2-hide   primary-btn2");*/
+      
       $("#overlay").toggleClass('overlay');
        $("#booking-btn ").removeClass("  hide-it");
        $("#confmed-btn").addClass(" hide-it");
@@ -72,7 +139,7 @@ $(".appoinment2   ").on('click', function(e){
 
 
 $(".Get-started2 , .close-consult, .consult-now  ").on('click', function(e){
-      /*e.preventDefault();//*/
+      
       $("#consult").toggleClass('consult-hide');
       $("#overlay").toggleClass('overlay');
 
@@ -84,7 +151,7 @@ $(".Get-started ").on('click', function(e){
         $("#booking-btn").toggleClass("   zi-up ");
         $(".Get-started span").toggleClass("fa-caret-down       fa-tooth");
 
-       /*$("body").toggleClass("overlay")*/
+       
 });
 
 $("#new-book").on('click', function(e){ 
@@ -94,7 +161,7 @@ $("#new-book").on('click', function(e){
         $("#confmed-btn , #new-book").toggleClass(" hide-it ");
         $(".Get-started span").toggleClass("fa-caret-down  fa-tooth");
 
-       /*$("body").toggleClass("overlay")*/
+       
 });
 
 $(".Get-started2 ").on('click', function(e){   
@@ -130,16 +197,16 @@ $('.close-booking').on('click',   function(e){
 			$(".Get-started span").toggleClass("fa-caret-down    fa-tooth");
 			$("#booking-btn").toggleClass("zi-up");
 
-			/*$("#confmed-btn").addClass(" confmed-btn");*/
+			
 
 });
 $('.close-consult').on('click',   function(e){
 			$(".Get-started2 span").toggleClass("fa-caret-down    fa-tooth");
 			$("#consult-btn").toggleClass("zi-up");
 
-			/*$("#confmed-btn").addClass(" confmed-btn");*/
+			
 
-});
+});*/
 
 $('.primary-btn').on('click',   function(e){
 			$(".primary-btn span").removeClass("fa fa-caret-right fadeOut")
@@ -147,6 +214,8 @@ $('.primary-btn').on('click',   function(e){
 			$(".sbm-btn").removeClass("hide-it")
 
 });
+
+
 
 /*
 function myFunction() {
@@ -161,15 +230,28 @@ function myFunction() {
          });*/
 
 $('.hide-menubar').on('click',   function(e){
-			$("#nav-icon1").toggleClass("open");
-			
-
+	$("#nav-icon1").toggleClass("open");	
 });
 
 
-$(document).ready(function(){
-	$('.menu-bar').click(function(){
-		$(this).toggleClass('open');
-	});
+$('.menu-bar').on('click', function(){
+	$('.menu-bar').toggleClass('open');
+});
+
+
+$('body').on("click", function(event){
+	var myClickedElement = $(event.target);
+    if(
+    	!myClickedElement.hasClass("main-menubar") 
+    	&& myClickedElement.closest(".main-menubar").length == 0
+    	&& !myClickedElement.hasClass("menu-bar") 
+    	&& myClickedElement.closest(".menu-bar").length == 0
+
+    	){
+        $(".main-menubar-extended").addClass("hide");
+        $(".menu-bar").removeClass('open');
+        
+    }
+
 });
 
