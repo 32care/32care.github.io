@@ -187,34 +187,43 @@
                         </div> -->
                         <div class="col-lg-12 col-md-12 about-right no-padding">
                             <div class="col-12" style="  z-index: 200;">
-                            <!-- <h1>Book an Appoinment</h1> -->
+                              <a href="#appoinment" onclick="document.getElementById('cp-tab').style.display='none'" class="close primary-btn4 text-uppercase "style   ="z-index: 200;">
+                                <span class="fas fa-times"></span>
+                              </a>
+
+
                             <form  class="col-12 " method=GET class="booking-form" id="myForm" action="https://docs.google.com/forms/d/e/1FAIpQLSf_rY6VVPjPDWOLpLXcGuLdRtGsL93GUrnPwpih_ldFfwR-Hw/viewform?usp=pp_url">
                                     <div class="row">
-                                        <div class="col-lg-12 d-flex flex-column">hello
-                                            <input name="entry.1507188961" placeholder="Patient name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Patient name'" class="form-control mt-20" required="" type="text" required>
+                                        <div class="col-lg-12 d-flex flex-column" style="margin-top: 30px;">Full name
+                                            <input name="entry.1507188961" placeholder="Patient name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Patient name'" class="form-control " required="" type="text" required>
                                         </div>
-                                        <div class="col-lg-6 d-flex flex-column">hello
-                                            <input name="entry.1590822912" placeholder="Phone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'" class="form-control mt-20" required="" type="text" required>
-                                        </div>
-                                        <div class="col-lg-6 d-flex flex-column">
-                                            <input id="datepicker2" name="entry.1313414293" class="single-in mt-20"  onblur="this.placeholder = 'Appoinment date'" type="text" placeholder="Appoinment date" required>
-                                        </div>
-                                        <div class="col-lg-6 d-flex flex-column">
-                                            <input id="datepicker2" name="entry.1313414293" class="single-in mt-20"  onblur="this.placeholder = 'Appoinment date'" type="text" placeholder="Select Location" required>
-                                        </div>
-                                        <div class="col-lg-6 d-flex flex-column">
-                                            <input id="datepicker2" name="entry.1313414293" class="single-in mt-20"  onblur="this.placeholder = 'Appoinment date'" type="text" placeholder="Doctor's Name" required>
-                                        </div>
-                                       <!--  <div class="col-lg-12 flex-column">
-                                            <textarea class="form-control mt-20" name="entry.824006088" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
-                                        </div> -->
+                                        <div class="col-lg-12  flex-column ">Mobile No.
+                                        	<div class="select-box "><select class="countryCode" id="country" name="country"><option selected="" value="IN">+91(IND)</option><option value="SG">+65(SGP)</option><option value="PH">+63(PHL)</option><option value="MY">+60(MYS)</option><option value="ID">+62(IDN)</option><option value="BR">+55(BRA)</option><option value="MX">+52(MEX)</option><option value="AR">+54(ARG)</option><option value="CL">+56(CHL)</option><option value="VN">+84(VNM)</option><option value="AE">+971(UAE)</option><option value="KW">+965(KW)</option><option value="TZ">+255(TZA)</option><option value="BH">+973(BH)</option><option value="SA">+966(SA)</option><option value="US">+1(USA)</option></select></div>
+                                           
+                                           
+                                            <input name="entry.1590822912" placeholder="Mobile" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mobile'" class="form-control mobile-enter " required="" type="text" required style="border-radius: 0px 20px 20px 0px; width: auto;">
+                                           
 
-                                        <div class="col-lg-12 d-flex justify-content-between send-btn">
-                                            <a href="#appoinment" onclick="document.getElementById('cp-tab').style.display='none'" class="close primary-btn4 mt-20 text-uppercase "style="z-index: 200;">
-                                                <span class="fas fa-times"></span></a>
-                                            <a href="#home" class="confirm-booking submit-btn primary-btn3 mt-20 text-uppercase ">confirm booking<span class="lnr lnr-arrow-right"></span></a>
+                                          </div>
+                                          <div class="col-lg-12 d-flex flex-column">Email Id
+                                            <input name="entry.1590822912" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" class="form-control " required="" type="text" required>
+                                        </div>
+                                        <div class="col-lg-12 d-flex flex-column">Create Password
+                                            <input name="entry.1590822912" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" class="form-control " required="" type="text" required>
+                                        </div>
+                                        
+                                      
+                                        <br>
+                                    <div class=" col justify-content-end row ">
+                                        <div class="col-md-auto cp-btn" style="margin-top: 5px;;">
+                                            
+                                         Create<span class="lnr lnr-arrow-right">
+                                                
+                                        </span>
+
                                             
                                         </div>
+                                    </div>    
 
                                         <div class="alert-msg"></div>
                                     </div>
@@ -240,7 +249,7 @@
                            
                             <form  class="col-12 " method=GET class="booking-form" id="myForm" action="https://docs.google.com/forms/d/e/1FAIpQLSf_rY6VVPjPDWOLpLXcGuLdRtGsL93GUrnPwpih_ldFfwR-Hw/viewform?usp=pp_url">
                                     <div class="row">
-                                        <div class="col-lg-12 d-flex flex-column">Username / Email-ID / Mobile.no
+                                        <div class="col-lg-12 d-flex flex-column" style="margin-top: 30px;">Username / Email-ID / Mobile.no
                                             <input name="entry.1507188961" placeholder="Username / Email-ID / Mobile.no"  class="form-control mt-20" required="" type="text" required>
                                         </div>
                                         <div id="password" class="col-lg-12 col-md-7 col-xl-7 flex-column row">Password
@@ -278,30 +287,32 @@
 
                                       		      
 			                                          <div id="gSignInWrapper" class="row" style="margin-left: 26px;">
-																							    <span class="label">Sign in with </span>
-																							    <div id="customBtn" class="customGPlusSignIn customBtn" >
+												  <span class="label">Sign in with </span>
+										 <div id="customBtn" class="customGPlusSignIn customBtn" >
 																							    	
-																							      <span class="icon"  >
-																							      	<img  src="img/g.png" style="height: 55%; width: 55%; margin-top: 10px; margin-left: 2px;">
+										<span class="icon"  >
+										<img  src="img/g.png" style="height: 55%; width: 55%; margin-top: 10px; margin-left: 2px;">
 																							      	
-																							      </span>
-																							      <span class="buttonText">Google</span>
+										 </span>
+										 <span class="buttonText">Google</span>
 
 																							      
-																							    </div>
-																							  </div>
+										 </div>
+										</div> 
+										<span class="label" style="margin-inline: 5px;
+                                                  font-weight: 600;"> or </span>
 
                                         			  
 
 
-                                        			  <div class="col-md-auto primary-btn3" style="padding-right: 0px;">
+                                     <div class="col-md-auto primary-btn3" style="padding-right: 0px;">
                                             
-                                                   Login<span class="lnr lnr-arrow-right">
+                                         Login<span class="lnr lnr-arrow-right">
                                                 
-                                                  </span>
+                                        </span>
 
                                             
-                                                </div>
+                                        </div>
 
                                           
                                            

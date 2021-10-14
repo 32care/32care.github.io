@@ -91,6 +91,11 @@ ul.a {
     margin-bottom: 20px;
    }
 
+@media (max-width: 436px){
+    .mobile-enter {
+      width: 160px!important;
+    }
+}
    
 
 @media (min-width: 992px){
@@ -993,31 +998,39 @@ p {
     display: none!important;
   }
   
-  .confmed-btn  {
-line-height: 39px;
-  padding-left: 0px;
-  padding-right: 0px;
-  border-radius: 20px 0px 0px 20px ;
-  background-image:  -webkit-linear-gradient(90deg, #e8e8e8 -22%, #ffffff 113%);
-  border: none;
-  color: #2d8c94;
-  display: inline-block;
-  font-weight: 500;
-  position: relative;
-  -webkit-transition: all 0.1s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.1s ease 0s;
-  cursor: pointer;
-      margin-top: 0px;
-        /*margin-bottom: 72px;*/
-    box-shadow: 0px 0px 2px 2px #adafae;
-    width: 130px;
+  .cp-btn  {
+            line-height: 42px;
+            padding-left: 18px;
+            padding-right: 60px;
+            border-radius: 20px 0px 25px 0px;
+            background-image: -webkit-linear-gradient(180deg, #1d747b 0%, #67e4ee 100%);
+            border: none;
+            color: #fff;
+            display: inline-block;
+            font-weight: 500;
+            position: relative;
+            -webkit-transition: all 0.1s ease 0s;
+            -moz-transition: all 0.3s ease 0s;
+            -o-transition: all 0.3s ease 0s;
+            transition: all 0.1s ease 0s;
+            cursor: pointer;
+            margin-right: -45px;
+            width: 120px;
+    }
+
+
+.cp-btn span {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    right: 25px;
+    
+    transition: all 0.3s ease 0s;
 }
-.confmed-btn span {
-    color: #5a989d;
-    font-size: 18px;
-    /*margin-left: 15px;*/
+.cp-btn:hover span{
+    right: 20px;
+
 }
 
 

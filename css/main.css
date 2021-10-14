@@ -2319,17 +2319,6 @@ nav.hide {
   font-size: 14px;
   padding: 12px;
   border-radius: 20px;
-  padding-left: 20px;
-}
-
-.about-right input, .about-right textarea {
-  font-size: 14px;
-  font-weight: 350;
-  background-color: white;
-  border: transparent;
-  padding: 12px;
-  color: black;
-  border-radius: 10px;
       outline: none;
 }
 
@@ -2338,9 +2327,9 @@ nav.hide {
 }
 
 .about-right .nice-select span {
-  color: #ccc;
+  color: #000;
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 350;
 }
 
 .about-right textarea {
