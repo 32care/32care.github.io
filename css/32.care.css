@@ -126,10 +126,28 @@ ul.a {
         display: none;
     }
 }
-@media (max-width: 400px){
+@media (max-width: 447px){
     h6 {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
+    .dentist-tab {
+        margin-inline: auto;
+        margin-left: auto!important;
+       
+    }
+    #mc_embed_signup{
+        margin-inline: auto;
+    }
+}
+
+@media (max-width: 767px){
+    #mc_embed_signup{
+        margin-inline: auto;
+    }
+    h6 {
+        margin-bottom: 20px;
+    }
+
 }
 
 
@@ -264,23 +282,11 @@ ul.a {
         }
 
 
-@media (max-width: 767px) and (min-width: 540px){
-          .form-group { margin-top: 10px;
- }
-
-}
 
 
 
- @media (max-width: 539px) and (min-width: 390px){
 
- /*.primary-btn , .sbm-btn {
-
-    margin-top: 10px;
- }*/
-  .form-group {
-    margin-top: 10px;
- }
+ 
 
      .email{
         width: 225px;
